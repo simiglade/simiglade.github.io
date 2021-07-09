@@ -1,0 +1,13 @@
+.Footer {
+}
+
+.Footer__item__header {
+  @apply text-h6;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.Footer__item__text {
+  @apply mb-3 text-body2;
+
+}
