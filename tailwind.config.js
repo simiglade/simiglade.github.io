@@ -6,7 +6,10 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      display: ["group-hover"],
+      borderWidth: ["group-hover"],
+    },
   },
   plugins: [
     plugin(
@@ -164,7 +167,7 @@ module.exports = {
               },
             },
             textColor: {
-              textPrimary: "rgba(0, 0, 0, 0.87)",
+              textPrimary: "#233972",
               textSecondary: "rgba(0, 0, 0, 0.54)",
               disabled: "rgba(0, 0, 0, 0.38)",
               hint: "rgba(0, 0, 0, 0.38)",

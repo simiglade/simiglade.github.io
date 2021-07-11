@@ -7,8 +7,8 @@ function Home(props) {
   return (
     <React.Fragment>
       <Header />
-      <div className="">
-        <img src={homeIntroImg} alt="home intro" />
+      <div className="bg-primary-dark bg-opacity-80">
+        <img src={homeIntroImg} alt="home intro" className='-mt-20'/>
       </div>
       <Footer />
     </React.Fragment>
