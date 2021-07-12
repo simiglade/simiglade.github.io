@@ -1,6 +1,6 @@
 import React from "react";
 import HeaderLinkContent from "./HeaderLinkContent";
-import ButtonBase from "./ButtonBase";
+import ButtonBase from "components/button/ButtonBase";
 import clsx from "clsx";
 
 function HeaderMobileLink(props) {

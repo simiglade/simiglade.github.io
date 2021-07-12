@@ -1,25 +1,52 @@
 import React from "react";
-import Header from "components/Header";
-import Footer from "components/Footer";
+import Header from "components/header/Header";
+import Footer from "components/footer/Footer";
 import homeIntroImg from "assets/img/home-intro.png";
-import Button from "components/Button";
-import Section from "components/Section";
-import SectionInfo from "components/SectionInfo";
-import SectionInfoTitle from "components/SectionInfoTitle";
-import SectionInfoDescription from "components/SectionInfoDescription";
+import Button from "components/button/Button";
+import Section from "components/section/Section";
+import SectionInfo from "components/section/SectionInfo";
+import SectionInfoTitle from "components/section/SectionInfoTitle";
+import SectionInfoDescription from "components/section/SectionInfoDescription";
 import { ReactComponent as HomeBusinessSvg } from "./HomeBusinesses.svg";
 import { ReactComponent as HomeFreelancerSvg } from "./HomeFreelancer.svg";
 import { ReactComponent as HomeStartupSvg } from "./HomeStartup.svg";
 import { ReactComponent as HomeDashboardSvg } from "./HomeDashboard.svg";
 import { ReactComponent as HomeVirtualCardSvg } from "./HomeVirtualCard.svg";
 import { ReactComponent as HomePOSSvg } from "./HomePOS.svg";
+import "./Home.css";
+import { ArrowDown } from "../../utils/icons";
 
 function Home(props) {
+  const [isVideoLoaded, setIsVideoLoaded] = React.useState(false);
+
+  const onLoadedData = () => {
+    setIsVideoLoaded(true);
+  };
   return (
     <React.Fragment>
       <Header />
       <div className="bg-primary-dark bg-opacity-80 relative">
-        <img src={homeIntroImg} alt="home intro" className="-mt-20" />
+        <div className="header-container">
+          <img
+            src={homeIntroImg}
+            className={`-mt-20 header-asset ${
+              isVideoLoaded ? "hidden" : "block"
+            }`}
+            alt="home intro"
+          />
+          <video
+            onLoadedData={onLoadedData}
+            className="-mt-20 header-asset"
+            loop="true"
+            autoplay="autoplay"
+            muted
+          >
+            <source
+              src="https://res.cloudinary.com/silva/video/upload/v1626089337/Glade_web_dev_video_12.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
         <div className="absolute inset-0">
           <div className="container mx-auto px-4 h-full flex items-center ">
             <div className="text-white max-w-xl">
@@ -35,6 +62,9 @@ function Home(props) {
               </p>
               <Button>Open an account</Button>
             </div>
+          </div>
+          <div className="scroll-down">
+            <ArrowDown />
           </div>
         </div>
       </div>

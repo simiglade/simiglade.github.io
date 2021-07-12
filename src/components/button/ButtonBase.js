@@ -10,7 +10,7 @@ function ButtonBase(props) {
   return (
     <button
       className={clsx(
-        "flex items-center justify-center cursor-pointer text-button transition-colors focus:outline-none",
+        "transition duration-700 ease-in-out flex items-center justify-center cursor-pointer text-button transform hover:-translate-y-1 focus:outline-none ",
         className
       )}
       {...rest}

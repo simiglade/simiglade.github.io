@@ -13,7 +13,10 @@ module.exports = {
   },
   plugins: [
     plugin(
-      function ({ addUtilities, theme }) {
+      function ({
+        addUtilities,
+        theme
+      }) {
         const fontFamily = theme("fontFamily.sans");
         addUtilities({
           ".text-h1": {
@@ -108,9 +111,10 @@ module.exports = {
             letterSpacing: "0.08333em",
             textTransform: "uppercase",
           },
+        }, {
+          variants: ['responsive', 'hover'],
         });
-      },
-      {
+      }, {
         theme: {
           extend: {
             colors: {
@@ -226,6 +230,7 @@ module.exports = {
           extend: {
             backgroundColor: ["active"],
             boxShadow: ["active"],
+            transitionDuration: ['hover', 'focus'],
           },
         },
       }

@@ -2,8 +2,8 @@ import React from "react";
 import clsx from "clsx";
 import { RouteEnum } from "utils/constants";
 import Logo from "components/Logo";
-import IconButton from "./IconButton";
-import Button from "./Button";
+import IconButton from "components/button/IconButton";
+import Button from "components/button/Button";
 import HeaderLink from "./HeaderLink";
 import HeaderMobileLink from "./HeaderMobileLink";
 
@@ -27,12 +27,14 @@ function Header(props) {
   const logoDark = <Logo />;
   const logoLight = <Logo light />;
 
-
   function toggleMobileMenu() {
     setIsMobileMenu((p) => !p);
   }
 
-  const desktopContent = (loginToWebButton = loginToWebButtonPrimary, logo = logoDark) => (
+  const desktopContent = (
+    loginToWebButton = loginToWebButtonPrimary,
+    logo = logoDark
+  ) => (
     <div className="lg:container flex items-center justify-between h-20 m-auto px-4">
       {logo}
       <div className="hidden lg:flex items-center justify-between h-20 space-x-4">

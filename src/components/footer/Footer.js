@@ -1,12 +1,12 @@
 import React from "react";
-import Logo from "./Logo";
+import Logo from "components/Logo";
 import "./Footer.css";
-import facebookImg from "../assets/img/footer-facebook.png";
-import instagramImg from "../assets/img/footer-instagram.png";
-import twitterImg from "../assets/img/footer-twitter.png";
-import linkedinImg from "../assets/img/footer-linkedin.png";
-import appStoreImg from "../assets/img/footer-app-store.png";
-import googlePlayImg from "../assets/img/footer-google-play.png";
+import facebookImg from "assets/img/footer-facebook.png";
+import instagramImg from "assets/img/footer-instagram.png";
+import twitterImg from "assets/img/footer-twitter.png";
+import linkedinImg from "assets/img/footer-linkedin.png";
+import appStoreImg from "assets/img/footer-app-store.png";
+import googlePlayImg from "assets/img/footer-google-play.png";
 
 function Footer(props) {
   return (
