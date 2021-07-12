@@ -7,18 +7,19 @@ import ButtonBase from "./ButtonBase";
  * @param {ButtonProps} props
  */
 function Button(props) {
-  const { variant, className, ...rest } = props;
+  const { variant, className, bgColor, color, ...rest } = props;
   return (
     <ButtonBase
       {...rest}
       className={clsx(
         "inline-flex py-2 px-3 text-button rounded",
         {
-          "bg-secondary text-white": variant === "contained",
+          [`${bgColor}`]: variant === "contained",
           "ring-1": variant === "outlined",
           "": variant === "text",
         },
-        className
+        className,
+        color
       )}
     />
   );
@@ -26,6 +27,8 @@ function Button(props) {
 
 Button.defaultProps = {
   variant: "contained",
+  bgColor: "bg-secondary",
+  color: "text-white",
 };
 
 export default Button;
@@ -35,5 +38,6 @@ export default Button;
  * variant: "contained" | "outlined" | "text";
  * size: "small" | "medium" | "large";
  * bgColor: string,
+ * color: string,
  * } & React.ComponentPropsWithoutRef<'button'>} ButtonProps
  */
