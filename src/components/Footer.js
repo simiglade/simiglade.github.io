@@ -28,7 +28,7 @@ function Footer(props) {
           <p className="Footer__item__text">
             Tel: +234 817 557 4227 | support@glade.ng
           </p>
-          <div className="Footer__item__text grid gap-2 grid-cols-5">
+          <div className="Footer__item__text flex space-x-4">
             {SOCIAL_MEDIAS.map(({ image, href }) => (
               <a href={href} target="_blank" rel="noreferrer">
                 <img src={image} alt="facebook" />
