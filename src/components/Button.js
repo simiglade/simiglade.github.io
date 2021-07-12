@@ -1,27 +1,35 @@
 import clsx from "clsx";
 import React from "react";
+import ButtonBase from "./ButtonBase";
 
 /**
  *
  * @param {ButtonProps} props
  */
 function Button(props) {
-  const { variant, className, ...rest } = props;
+  const { variant, className, bgColor, color, ...rest } = props;
   return (
-    <button
+    <ButtonBase
       {...rest}
       className={clsx(
-        "inline-flex justify-center items-center rounded outline-none focus:outline-none overflow-hidden border-0 cursor-pointer py-4 px-12",
+        "inline-flex py-2 px-3 text-button rounded",
         {
-          "bg-secondary text-white": variant === "contained",
-          " text-primary ring-1 ring-primary": variant === "outlined",
-          " text-secondary": variant === "text",
+          [`${bgColor}`]: variant === "contained",
+          "ring-1": variant === "outlined",
+          "": variant === "text",
         },
-        className
+        className,
+        color
       )}
     />
   );
 }
+
+Button.defaultProps = {
+  variant: "contained",
+  bgColor: "bg-secondary",
+  color: "text-white",
+};
 
 export default Button;
 
@@ -30,6 +38,6 @@ export default Button;
  * variant: "contained" | "outlined" | "text";
  * size: "small" | "medium" | "large";
  * bgColor: string,
- *
+ * color: string,
  * } & React.ComponentPropsWithoutRef<'button'>} ButtonProps
  */
