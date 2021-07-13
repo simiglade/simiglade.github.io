@@ -1,12 +1,12 @@
 import React from "react";
-import Logo from "./Logo";
+import Logo from "components/Logo";
 import "./Footer.css";
-import facebookImg from "../assets/img/footer-facebook.png";
-import instagramImg from "../assets/img/footer-instagram.png";
-import twitterImg from "../assets/img/footer-twitter.png";
-import linkedinImg from "../assets/img/footer-linkedin.png";
-import appStoreImg from "../assets/img/footer-app-store.png";
-import googlePlayImg from "../assets/img/footer-google-play.png";
+import facebookImg from "assets/img/footer-facebook.png";
+import instagramImg from "assets/img/footer-instagram.png";
+import twitterImg from "assets/img/footer-twitter.png";
+import linkedinImg from "assets/img/footer-linkedin.png";
+import appStoreImg from "assets/img/footer-app-store.png";
+import googlePlayImg from "assets/img/footer-google-play.png";
 
 function Footer(props) {
   return (
@@ -28,7 +28,7 @@ function Footer(props) {
           <p className="Footer__item__text">
             Tel: +234 817 557 4227 | support@glade.ng
           </p>
-          <div className="Footer__item__text grid gap-2 grid-cols-5">
+          <div className="Footer__item__text flex space-x-4">
             {SOCIAL_MEDIAS.map(({ image, href }) => (
               <a href={href} target="_blank" rel="noreferrer">
                 <img src={image} alt="facebook" />

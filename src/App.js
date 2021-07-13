@@ -14,6 +14,6 @@ function App() {
 export default App;
 
 const ROUTES = [
-  { path: "/", component: React.lazy(() => import("./home/Home")) },
+  { path: "/", component: React.lazy(() => import("./pages/home/Home")) },
   // { path: "/", component: React.lazy(() => import("./home/Home")) }
 ];

@@ -6,11 +6,17 @@ module.exports = {
     extend: {},
   },
   variants: {
-    extend: {},
+    extend: {
+      display: ["group-hover"],
+      borderWidth: ["group-hover"],
+    },
   },
   plugins: [
     plugin(
-      function ({ addUtilities, theme }) {
+      function ({
+        addUtilities,
+        theme
+      }) {
         const fontFamily = theme("fontFamily.sans");
         addUtilities({
           ".text-h1": {
@@ -57,22 +63,23 @@ module.exports = {
           },
           ".text-subtitle1": {
             fontFamily,
-            fontWeight: 400,
-            fontSize: "1rem",
-            lineHeight: 1.75,
+            fontWeight: 700,
+            fontSize: "1.7rem",
+            lineHeight: 1.5,
+            marginBottom: "1.5rem",
             letterSpacing: "0.00938em",
           },
           ".text-subtitle2": {
             fontFamily,
             fontWeight: 500,
-            fontSize: "0.875rem",
+            fontSize: "1.3rem",
             lineHeight: 1.57,
             letterSpacing: "0.00714em",
           },
           ".text-body1": {
             fontFamily,
             fontWeight: 400,
-            fontSize: "1rem",
+            fontSize: "1.05rem",
             lineHeight: 1.5,
             letterSpacing: "0.00938em",
           },
@@ -105,9 +112,10 @@ module.exports = {
             letterSpacing: "0.08333em",
             textTransform: "uppercase",
           },
+        }, {
+          variants: ['responsive', 'hover'],
         });
-      },
-      {
+      }, {
         theme: {
           extend: {
             colors: {
@@ -164,7 +172,7 @@ module.exports = {
               },
             },
             textColor: {
-              textPrimary: "rgba(0, 0, 0, 0.87)",
+              textPrimary: "#233972",
               textSecondary: "rgba(0, 0, 0, 0.54)",
               disabled: "rgba(0, 0, 0, 0.38)",
               hint: "rgba(0, 0, 0, 0.38)",
@@ -223,6 +231,7 @@ module.exports = {
           extend: {
             backgroundColor: ["active"],
             boxShadow: ["active"],
+            transitionDuration: ['hover', 'focus'],
           },
         },
       }
