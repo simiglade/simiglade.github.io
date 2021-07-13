@@ -12,7 +12,7 @@ function Button(props) {
     <ButtonBase
       {...rest}
       className={clsx(
-        "inline-flex py-2 px-3 text-button rounded",
+        "inline-flex py-2 px-3 text-button rounded hover:-translate-y-1",
         {
           [`${bgColor}`]: variant === "contained",
           "ring-1": variant === "outlined",

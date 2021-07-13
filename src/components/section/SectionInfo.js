@@ -8,7 +8,7 @@ import React from "react";
 function SectionInfo(props) {
   const { className, ...rest } = props;
 
-  return <div className={clsx("p-4 md:p-7 max-w-md", className)} {...rest} />;
+  return <div className={clsx("p-4 md:p-7 max-w-xl", className)} {...rest} />;
 }
 
 export default SectionInfo;

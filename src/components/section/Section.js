@@ -7,7 +7,12 @@ import React from "react";
  */
 function Section(props) {
   const { className, ...rest } = props;
-  return <div className={clsx("container mx-auto my-10 px-4", className)} {...rest} />;
+  return (
+    <div
+      className={clsx("container mx-auto py-20 px-4", className)}
+      {...rest}
+    />
+  );
 }
 
-export default Section
+export default Section;

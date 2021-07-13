@@ -18,6 +18,20 @@
     animation: move-up-down 1s infinite alternate;
 }
 
+.check_circle {
+    color: #032086;
+    background: #CFCEFB;
+    width: 35px;
+    height: 35px;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem;
+}
+
+
 @-webkit-keyframes move-up-down {
     0% {
         transform: translateY(0);

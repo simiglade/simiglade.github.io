@@ -59,7 +59,7 @@ function Footer(props) {
           <p className="Footer__item__text">
             No. 15 J.J. Oluleye Street, Utako Abuja.
           </p>
-          <div className="flex flex-wrap">
+          <div className="flex md:flex-row flex-col">
             <img src={appStoreImg} alt="appstore" className="m-1" />
             <img src={googlePlayImg} alt="googleplay" className="m-1" />
           </div>

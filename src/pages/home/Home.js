@@ -12,9 +12,16 @@ import { ReactComponent as HomeFreelancerSvg } from "./HomeFreelancer.svg";
 import { ReactComponent as HomeStartupSvg } from "./HomeStartup.svg";
 import { ReactComponent as HomeDashboardSvg } from "./HomeDashboard.svg";
 import { ReactComponent as HomeVirtualCardSvg } from "./HomeVirtualCard.svg";
-import { ReactComponent as HomePOSSvg } from "./HomePOS.svg";
 import "./Home.css";
 import { ArrowDown } from "../../utils/icons";
+
+import HomeExecutive from "./HomeRegisterComapny.png";
+import HomePos from "./HomePOS.png";
+import HomeDashboard from "./HomeDashboard.png";
+import DashboardMobile from "./DashboardMobile.png";
+import DashboardMerchant from "./DashboardMerchant.png";
+import appStoreImg from "assets/img/footer-app-store.png";
+import googlePlayImg from "assets/img/footer-google-play.png";
 
 function Home(props) {
   const [isVideoLoaded, setIsVideoLoaded] = React.useState(false);
@@ -69,7 +76,7 @@ function Home(props) {
         </div>
       </div>
       <Section className="">
-        <div className="my-24">
+        <div className="my-5">
           <SectionInfoTitle header className="text-center">
             For all types of businesses
           </SectionInfoTitle>
@@ -152,7 +159,7 @@ function Home(props) {
       >
         <Section className="flex items-center justify-center flex-wrap">
           <SectionInfo>
-            <HomeVirtualCardSvg className="w-full" />
+            <img src={HomeDashboard} alt="Glade Dashboard" />
           </SectionInfo>
           <SectionInfo>
             <SectionInfoTitle header style={{ color: "white" }}>
@@ -190,75 +197,269 @@ function Home(props) {
           </SectionInfo>
         </Section>
       </div>
+      <div
+        style={{
+          background:
+            "linear-gradient(105.37deg, #00AFEF 17.71%, #0E038A 100%)",
+        }}
+      ></div>
       <Section className="flex items-center justify-center flex-wrap">
         <SectionInfo>
-          <SectionInfoTitle header>
-            Reliable POS terminals for your Business
-          </SectionInfoTitle>
-          <SectionInfoDescription>
-            We provide POS to our merchants for in-store payment collections and
-            give our agents competitive prices to make profit.
-          </SectionInfoDescription>
-          <SectionInfoTitle>Reliable network</SectionInfoTitle>
-          <SectionInfoDescription>
-            Use Glade POS and avoid "network wahala". This is why all our
-            merchants and agents are always happy.
-          </SectionInfoDescription>
-          <SectionInfoTitle>Instant settlements</SectionInfoTitle>
-          <SectionInfoDescription>
-            We give instant settlements on our platform because we know that you
-            would need access to your money the moment you make it.
-          </SectionInfoDescription>
-          <SectionInfoTitle>
-            We are available across all channels
-          </SectionInfoTitle>
-          <SectionInfoDescription>
-            Glade POS gives you access to multiple transactions channels via;
-            mobile app, web, SmartPOS.
-          </SectionInfoDescription>
+          <div className="mb-5">
+            <SectionInfoTitle header>
+              Reliable POS terminals for your Business
+            </SectionInfoTitle>
+            <SectionInfoDescription>
+              We provide POS to our merchants for in-store payment collections
+              and give our agents competitive prices to make profit.
+            </SectionInfoDescription>
+            <SectionInfoTitle>Reliable network</SectionInfoTitle>
+            <SectionInfoDescription>
+              Use Glade POS and avoid "network wahala". This is why all our
+              merchants and agents are always happy.
+            </SectionInfoDescription>
+            <SectionInfoTitle>Instant settlements</SectionInfoTitle>
+            <SectionInfoDescription>
+              We give instant settlements on our platform because we know that
+              you would need access to your money the moment you make it.
+            </SectionInfoDescription>
+            <SectionInfoTitle>
+              We are available across all channels
+            </SectionInfoTitle>
+            <SectionInfoDescription>
+              Glade POS gives you access to multiple transactions channels via;
+              mobile app, web, SmartPOS.
+            </SectionInfoDescription>
+          </div>
+
           <Button bgColor="bg-primary">Become an agent</Button>
         </SectionInfo>
         <SectionInfo>
-          <HomePOSSvg className="w-full" />
+          <img src={HomePos} alt="POS" />
         </SectionInfo>
       </Section>
-      <Section className="flex items-center justify-center flex-wrap">
+      <div
+        style={{
+          background: "#F9FDFF",
+        }}
+      >
+        <Section className="flex items-center justify-center flex-wrap">
+          <SectionInfo>
+            <img src={HomeExecutive} alt="Company Executive" />
+          </SectionInfo>
+          <SectionInfo>
+            <div className="mb-5">
+              <SectionInfoTitle header>
+                Register your company and open a Glade account
+              </SectionInfoTitle>
+              {[
+                {
+                  label: "It’s FREE",
+                  description:
+                    "Get your company registered and a business account for free",
+                },
+                {
+                  label: "It’s Fast",
+                  description:
+                    "Get your company registered and a business account for free",
+                },
+                {
+                  label: "It’s safe",
+                  description:
+                    "Get your company registered and a business account for free",
+                },
+              ].map(({ label, description }, key) => (
+                <div className="flex" key={key}>
+                  <span class="material-icons md-18 mr-3 mt-3 text-green-400 fill-current">
+                    check_circle
+                  </span>
+                  <div>
+                    <div>
+                      <SectionInfoTitle>{label}</SectionInfoTitle>
+                      <SectionInfoDescription style={{ color: "#7782BF" }}>
+                        {description}
+                      </SectionInfoDescription>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            <Button bgColor="bg-secondary">Register your company</Button>
+          </SectionInfo>
+        </Section>
+      </div>
+
+      <Section className="flex items-center justify-around flex-wrap">
         <SectionInfo>
-          <HomePOSSvg className="w-full" />
+          <div className="mb-5">
+            <SectionInfoTitle header>
+              Getting started on mobile
+            </SectionInfoTitle>
+            <SectionInfoDescription>
+              Set up your account with these easy steps.
+            </SectionInfoDescription>
+            {[
+              {
+                label: "Download the app",
+                description: "Get the app on playstore or app store",
+              },
+              {
+                label: "Tell us about your company",
+                description: "Get the app on playstore or app store",
+              },
+              {
+                label: "Get the app on playstore or app store",
+                description: "Get the app on playstore or app store",
+              },
+              {
+                label: "Your account is ready ",
+                description: "Get the app on playstore or app store",
+              },
+            ].map(({ label, description }, key) => (
+              <div className="flex" key={key}>
+                {key === 3 ? (
+                  <span class="check_circle  material-icons fill-current">
+                    done
+                  </span>
+                ) : (
+                  <span class="check_circle">{key + 1}</span>
+                )}
+
+                <div>
+                  <div>
+                    <SectionInfoTitle>{label}</SectionInfoTitle>
+                    <SectionInfoDescription>
+                      {description}
+                    </SectionInfoDescription>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
         </SectionInfo>
         <SectionInfo>
-          <SectionInfoTitle header>
-            Register your company and open a Glade account
+          <img
+            src={DashboardMobile}
+            className="max-h-96"
+            alt="Glade dashboard mobile"
+          />
+        </SectionInfo>
+      </Section>
+
+      <section className="px-4 py-10 flex justify-center">
+        <div className="container">
+          <SectionInfoTitle header className="text-center mb-5">
+            Trusted by Nigerian businesses
           </SectionInfoTitle>
-          {[
-            {
-              label: "It’s FREE",
-              description:
-                "Get your company registered and a business account for free",
-            },
-            {
-              label: "It’s Fast",
-              description:
-                "Get your company registered and a business account for free",
-            },
-            {
-              label: "It’s Safe",
-              description:
-                "Get your company registered and a business account for free",
-            },
-          ].map(({ label, description }, key) => (
-            <div className="flex" key={key}>
-              <span class="material-icons md-18 mr-3 text-green-400 fill-current">
-                check_circle
-              </span>
-              <div>
-                <SectionInfoTitle>{label}</SectionInfoTitle>
-                <SectionInfoDescription>{description}</SectionInfoDescription>
+
+          <div className="flex flex-wrap justify-center  -mx-2">
+            {[
+              {
+                title: "CEO, Mustees Clothing",
+                description:
+                  "Its amazing to be able to receive instant settlements, the customer service at Glade is of an exceptional standard. I'd recommend it to all business online",
+              },
+              {
+                title: "Project manager, NobleGate",
+                description:
+                  "I can testify of their credibility. I have never been stranded with Glade. They are experts in treating their customers right. Thumbs up!",
+              },
+              {
+                title: "Head of Growth, Payforce",
+                description:
+                  "I want to thank the Glade team for their support during our project. Our service is now more efficient today &amp; sales have increased by 70%. Thank you once more guys & don't stop doing what you do.",
+              },
+              {
+                title: "Canbillaire Nigeria Ltd.",
+                description:
+                  "I have found Glade to be one of the most reliable payment solutions i've ever used. The insights dashboard has helped me target and reward my most valued customers.",
+              },
+            ].map(({ title, description }, key) => (
+              <div key={key} className="w-full md:w-1/4 sm:w-1/2 p-2">
+                <div
+                  className="m-3 h-100  p-8"
+                  style={{ background: "#FDFDFD" }}
+                >
+                  <div className="text-subtitle3 text-textPrimaryLight mb-2">
+                    {title}
+                  </div>
+                  <div className="text-body3 text-textPrimaryLighter">
+                    {description}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <div
+        style={{
+          background: "#F9FDFF",
+        }}
+      >
+        <Section className="flex items-center flex-wrap">
+          <SectionInfo>
+            <div className="mb-5">
+              <div className="flex">
+                <div>
+                  <SectionInfoTitle header>Stay in the loop</SectionInfoTitle>
+                  <SectionInfoTitle>
+                    Get updates on our latest features and offers.
+                  </SectionInfoTitle>
+                  <div>
+                    <div class="w-full">
+                      <input
+                        className="mt-5 appearance-none border-2 border-gray-200 rounded w-full py-2 px-4 text-gray-700 leading-tight focus:outline-none bg-white focus:border-blue-500"
+                        id="inline-password"
+                        type="email"
+                        placeholder="Enter your email"
+                      />
+                    </div>
+                    <div className="text-body3 text-textPrimaryLighter max-w-md">
+                      By subscribing you agree to receive marketing
+                      communications from Glade. You can unsubscribe anytime
+                      using the link in the footer of any of our emails. See our
+                      privacy policy.
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          ))}
+            <Button bgColor="bg-secondary px-2">Signup</Button>
+          </SectionInfo>
+        </Section>
+      </div>
+
+      <Section className="flex items-center justify-around flex-wrap">
+        <SectionInfo>
+          <div className="mb-5">
+            <SectionInfoTitle header>
+              A business bank account where the possibilities are endless
+            </SectionInfoTitle>
+            <SectionInfoDescription>
+              Set up your account with these easy steps.
+            </SectionInfoDescription>
+          </div>
+          <Button bgColor="bg-secondary">Register your company</Button>
+          <div className="flex mt-10">
+            <a href="/" className="mr-1">
+              <img src={appStoreImg} alt="appstore" className="m-1" />
+            </a>
+            <a href="/">
+              <img src={googlePlayImg} alt="googleplay" className="m-1" />
+            </a>
+          </div>
+        </SectionInfo>
+        <SectionInfo>
+          <img
+            src={DashboardMerchant}
+            className="max-h-96"
+            alt="Glade dashboard mobile"
+          />
         </SectionInfo>
       </Section>
+
       <Footer />
     </React.Fragment>
   );

@@ -65,8 +65,7 @@ module.exports = {
             fontFamily,
             fontWeight: 700,
             fontSize: "1.7rem",
-            lineHeight: 1.5,
-            marginBottom: "1.5rem",
+            lineHeight: 1.25,
             letterSpacing: "0.00938em",
           },
           ".text-subtitle2": {
@@ -74,6 +73,13 @@ module.exports = {
             fontWeight: 500,
             fontSize: "1.3rem",
             lineHeight: 1.57,
+            letterSpacing: "0.00714em",
+          },
+          ".text-subtitle3": {
+            fontFamily,
+            fontWeight: 400,
+            fontSize: "1.05rem",
+            lineHeight: 1.3,
             letterSpacing: "0.00714em",
           },
           ".text-body1": {
@@ -88,6 +94,13 @@ module.exports = {
             fontWeight: 400,
             fontSize: "0.875rem",
             lineHeight: 1.43,
+            letterSpacing: "0.01071em",
+          },
+          ".text-body3": {
+            fontFamily,
+            fontWeight: 400,
+            fontSize: "0.8rem",
+            lineHeight: 1.4,
             letterSpacing: "0.01071em",
           },
           ".text-button": {
@@ -174,6 +187,8 @@ module.exports = {
             textColor: {
               textPrimary: "#233972",
               textSecondary: "rgba(0, 0, 0, 0.54)",
+              textPrimaryLight: "#7782BF",
+              textPrimaryLighter: "#717485",
               disabled: "rgba(0, 0, 0, 0.38)",
               hint: "rgba(0, 0, 0, 0.38)",
             },
