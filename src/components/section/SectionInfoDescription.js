@@ -10,7 +10,7 @@ function SectionInfoDescription(props) {
   return (
     <p
       {...rest}
-      className={clsx("text-textSecondary mb-4", className)}
+      className={clsx("text-textSecondary mb-4 text-body1", className)}
     >
       {props.children}
     </p>

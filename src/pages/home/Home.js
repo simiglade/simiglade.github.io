@@ -69,19 +69,21 @@ function Home(props) {
         </div>
       </div>
       <Section className="">
-        <SectionInfoTitle header className="text-center">
-          For all types of businesses
-        </SectionInfoTitle>
-        <div className="flex mt-6 justify-center">
-          {TYPE_OF_BUSINESSES.map((business, key) => (
-            <div key={key} className="flex flex-col items-center w-80 px-4">
-              <business.icon className="mb-4" />
-              <SectionInfoTitle>{business.label}</SectionInfoTitle>
-              <SectionInfoDescription className="text-center">
-                {business.description}
-              </SectionInfoDescription>
-            </div>
-          ))}
+        <div className="my-24">
+          <SectionInfoTitle header className="text-center">
+            For all types of businesses
+          </SectionInfoTitle>
+          <div className="flex mt-6 justify-center md:flex-row  items-center flex-col">
+            {TYPE_OF_BUSINESSES.map((business, key) => (
+              <div key={key} className="flex flex-col items-center w-80 px-4">
+                <business.icon className="mb-4" />
+                <SectionInfoTitle>{business.label}</SectionInfoTitle>
+                <SectionInfoDescription className="text-center">
+                  {business.description}
+                </SectionInfoDescription>
+              </div>
+            ))}
+          </div>
         </div>
       </Section>
       <Section className="flex items-center justify-center flex-wrap">
