@@ -61,7 +61,7 @@ function Home(props) {
               <h3 className="text-h3" style={{ fontWeight: "bolder" }}>
                 Business banking made for Africa
               </h3>
-              <p className="text-body1 mb-9">
+              <p className="text-body1 mt-3 mb-9">
                 Proudly made for small businesses, startups and freelancers in
                 Africa.
               </p>
