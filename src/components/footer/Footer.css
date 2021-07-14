@@ -2,7 +2,6 @@
 
 .Footer__item__header {
   @apply text-h6;
-  font-weight: bold;
   color: #7782BF;
   text-transform: uppercase;
 }

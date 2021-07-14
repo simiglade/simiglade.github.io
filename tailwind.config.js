@@ -64,36 +64,42 @@ module.exports = {
           ".text-subtitle1": {
             fontFamily,
             fontWeight: 700,
-            fontSize: "1.7rem",
-            lineHeight: 1.25,
+            fontSize: "1.75rem",
+            lineHeight: "40px",
             letterSpacing: "0.00938em",
           },
           ".text-subtitle2": {
             fontFamily,
-            fontWeight: 500,
-            fontSize: "1.3rem",
-            lineHeight: 1.57,
-            letterSpacing: "0.00714em",
+            fontWeight: 600,
+            fontSize: "1.517rem",
+            lineHeight: "32.36px",
           },
           ".text-subtitle3": {
             fontFamily,
             fontWeight: 400,
-            fontSize: "1.05rem",
+            fontSize: "1rem",
             lineHeight: 1.3,
             letterSpacing: "0.00714em",
           },
           ".text-body1": {
             fontFamily,
-            fontWeight: 400,
+            fontWeight: 200,
             fontSize: "1.05rem",
-            lineHeight: 1.5,
-            letterSpacing: "0.00938em",
+            lineHeight: "26px",
+            color: "#717485"
           },
           ".text-body2": {
             fontFamily,
             fontWeight: 400,
             fontSize: "0.875rem",
             lineHeight: 1.43,
+            letterSpacing: "0.01071em",
+          },
+          ".text-body2b": {
+            fontFamily,
+            fontWeight: 300,
+            fontSize: "1.25rem",
+            lineHeight: "30px",
             letterSpacing: "0.01071em",
           },
           ".text-body3": {
@@ -203,7 +209,7 @@ module.exports = {
               hover: ".04",
             },
             fontFamily: {
-              sans: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen','Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
+              sans: "Inter",
             },
             boxShadow: {
               1: "0px 2px 1px -1px rgba(0,0,0,0.2),0px 1px 1px 0px rgba(0,0,0,0.14),0px 1px 3px 0px rgba(0,0,0,0.12)",

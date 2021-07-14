@@ -3,7 +3,7 @@ import { Route } from "react-router";
 
 function App() {
   return (
-    <React.Suspense fallback={<div>Loading...</div>}>
+    <React.Suspense fallback={<div></div>}>
       {ROUTES.map((route, key) => (
         <Route key={key} {...route} />
       ))}

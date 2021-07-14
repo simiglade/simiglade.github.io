@@ -10,30 +10,32 @@ import googlePlayImg from "assets/img/footer-google-play.png";
 
 function Footer(props) {
   return (
-    <div className="Footer bg-primary-light bg-opacity-10 p-8">
-      <div className="container grid gap-4 md:grid-cols-4">
-        <div className="">
-          <Logo />
-        </div>
-        <div>
-          <p className="Footer__item__text">
-            Proudly made for small businesses, startups, and freelancers. Our
-            platform makes financial management accessible and affordable for
-            businesses.
-          </p>
-          <p className="Footer__item__text">
-            Banking and card services provided by Providus Bank Limited; Member
-            NDIC
-          </p>
-          <p className="Footer__item__text">
-            Tel: +234 817 557 4227 | support@glade.ng
-          </p>
-          <div className="Footer__item__text flex space-x-4">
-            {SOCIAL_MEDIAS.map(({ image, href }) => (
-              <a href={href} target="_blank" rel="noreferrer">
-                <img src={image} alt="facebook" />
-              </a>
-            ))}
+    <div className="Footer flex justify-center bg-primary-light bg-opacity-10 p-8">
+      <div className="container grid gap-5 md:grid-cols-3">
+        <div className="flex">
+          <div>
+            <Logo />
+          </div>
+          <div>
+            <p className="Footer__item__text">
+              Proudly made for small businesses, startups, and freelancers. Our
+              platform makes financial management accessible and affordable for
+              businesses.
+            </p>
+            <p className="Footer__item__text">
+              Banking and card services provided by Providus Bank Limited;
+              Member NDIC
+            </p>
+            <p className="Footer__item__text">
+              Tel: +234 817 557 4227 | support@glade.ng
+            </p>
+            <div className="Footer__item__text flex space-x-4">
+              {SOCIAL_MEDIAS.map(({ image, href }) => (
+                <a href={href} target="_blank" rel="noreferrer">
+                  <img src={image} alt="facebook" />
+                </a>
+              ))}
+            </div>
           </div>
         </div>
         <div>
