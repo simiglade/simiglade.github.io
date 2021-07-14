@@ -22,7 +22,7 @@ const ROUTES = [
   {
     path: "/business-banking",
     component: React.lazy(() =>
-      import("./pages/businessBankAccount/BusinessBankAccount")
+      import("pages/businessBankAccount/BusinessBankAccount")
     ),
   },
   { path: "/", component: React.lazy(() => import("./pages/home/Home")) },
