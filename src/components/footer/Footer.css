@@ -1,12 +1,48 @@
 .Footer {}
 
 .Footer__item__header {
-  @apply text-h6;
+  line-height: 21.92px;
+  font-size: 1.125rem;
+  font-weight: 400;
   color: #7782BF;
+  margin-bottom: .5rem;
   text-transform: uppercase;
 }
 
 .Footer__item__text {
   color: #7782BF;
-  @apply mb-3 text-body2;
+  line-height: 1.4;
+  font-weight: 200;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+
+}
+
+.Footer__item__toplink ul {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.Footer__item__toplink ul li:not(:last-child):after {
+  content: "";
+  width: 2px;
+  display: inline-block;
+  height: 15px;
+  margin-left: .25rem;
+  margin-right: .25rem;
+  background-color: #7782BF;
+}
+
+.Footer__item__toplink a {
+  color: #434D80;
+  line-height: 1.3;
+  font-size: 0.938rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.Footer__item__slack {
+  font-weight: 400;
+  font-size: 1.3rem;
 }
