@@ -2,7 +2,7 @@ import React from "react";
 // import { Route, Router } from "react-router";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
-import BusinessBankAccount from "./pages/businessBankAccount/BusinessBankAccount";
+import BusinesBankAccount from "./pages/businesBankAccount/businesBankAccount";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ export default App;
 const ROUTES = [
   {
     path: "/business-banking",
-    component: BusinessBankAccount,
+    component: BusinesBankAccount,
   },
   { path: "/", component: Home },
 ];
