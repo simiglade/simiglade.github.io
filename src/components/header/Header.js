@@ -6,8 +6,10 @@ import IconButton from "components/button/IconButton";
 import Button from "components/button/Button";
 import HeaderLink from "./HeaderLink";
 import HeaderMobileLink from "./HeaderMobileLink";
+import { useLocation, Link } from "react-router-dom";
 
 function Header(props) {
+  const location = useLocation();
   const [isMobileMenu, setIsMobileMenu] = React.useState(false);
   const [isFixedHeader, setIsFixedHeader] = React.useState(false);
 
@@ -36,7 +38,7 @@ function Header(props) {
     logo = logoDark
   ) => (
     <div className="lg:container flex items-center justify-between h-20 m-auto px-4">
-      {logo}
+      <Link to="/">{logo}</Link>
       <div className="hidden lg:flex items-center justify-between h-20 space-x-4">
         {LINKS.map((link, index) => (
           <HeaderLink key={index} link={link} />
@@ -65,17 +67,35 @@ function Header(props) {
 
   return (
     <>
-      <div className="relative z-10 text-white">
-        {desktopContent(loginToWebButtonWhite, logoLight)}
-      </div>
       <div
-        className={clsx(
-          "fixed bg-white text-black z-appBar w-full hidden lg:block",
-          isFixedHeader ? "top-0" : "-top-20"
-        )}
+        className={`relative z-10 ${
+          location.pathname === "/" ? "text-white" : "text-black"
+        }`}
       >
-        {desktopContent()}
+        {desktopContent(
+          loginToWebButtonWhite,
+          location.pathname === "/" ? logoLight : logoDark
+        )}
       </div>
+      {location.pathname === "/" ? (
+        <div
+          className={clsx(
+            "fixed bg-white text-black z-appBar w-full hidden lg:block",
+            isFixedHeader ? "top-0" : "-top-20"
+          )}
+        >
+          {desktopContent()}
+        </div>
+      ) : (
+        <div
+          className={clsx(
+            "fixed bg-white text-black z-appBar w-full hidden lg:block top-0"
+          )}
+        >
+          {desktopContent()}
+        </div>
+      )}
+
       <div
         style={{
           transform: isMobileMenu ? "translateX(0%)" : "translateX(100%)",

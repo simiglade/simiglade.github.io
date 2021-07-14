@@ -1,6 +1,8 @@
+import BusinessBankAccount from "pages/businessBankAccount/BusinessBankAccount";
 import React from "react";
 // import { Route, Router } from "react-router";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./pages/home/Home";
 
 function App() {
   return (
@@ -21,9 +23,7 @@ export default App;
 const ROUTES = [
   {
     path: "/business-banking",
-    component: React.lazy(() =>
-      import("pages/businessBankAccount/BusinessBankAccount")
-    ),
+    component: BusinessBankAccount,
   },
-  { path: "/", component: React.lazy(() => import("./pages/home/Home")) },
+  { path: "/", component: Home },
 ];
