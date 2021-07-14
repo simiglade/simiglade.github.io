@@ -121,7 +121,7 @@ const LINKS = [
               "Create a business current account and manage transactions on the go.",
           },
           {
-            label: "Glade POS",
+            label: "Glade API",
             path: RouteEnum.GLADE_POS,
             description:
               "We provide POS to our merchants for in-store payment collections and give our agents competitive price to make profit.",
