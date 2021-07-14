@@ -1,8 +1,8 @@
-import BusinessBankAccount from "pages/businessBankAccount/BusinessBankAccount";
 import React from "react";
 // import { Route, Router } from "react-router";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./pages/home/Home";
+import BusinessBankAccount from "./pages/businessBankAccount/BusinessBankAccount";
 
 function App() {
   return (
