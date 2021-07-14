@@ -1,6 +1,4 @@
 import React from "react";
-import Header from "components/header/Header";
-import Footer from "components/footer/Footer";
 import homeIntroImg from "assets/img/home-intro.png";
 import Button from "components/button/Button";
 import Section from "components/section/Section";
@@ -22,6 +20,7 @@ import DashboardMobile from "./DashboardMobile.png";
 import DashboardMerchant from "./DashboardMerchant.png";
 import appStoreImg from "assets/img/footer-app-store.png";
 import googlePlayImg from "assets/img/footer-google-play.png";
+import Layout from "../../components/Layout";
 
 function Home(props) {
   const [isVideoLoaded, setIsVideoLoaded] = React.useState(false);
@@ -30,8 +29,7 @@ function Home(props) {
     setIsVideoLoaded(true);
   };
   return (
-    <React.Fragment>
-      <Header />
+    <Layout>
       <div className="bg-primary-dark bg-opacity-80 relative">
         <div className="header-container">
           <img
@@ -80,7 +78,7 @@ function Home(props) {
           <SectionInfoTitle header className="text-center">
             For all types of businesses
           </SectionInfoTitle>
-          <div className="flex mt-6 justify-center md:flex-row  items-center flex-col">
+          <div className="flex mt-6 justify-between md:flex-row  items-center flex-col">
             {TYPE_OF_BUSINESSES.map((business, key) => (
               <div key={key} className="flex flex-col items-center w-80 px-4">
                 <business.icon className="mb-4" />
@@ -459,9 +457,7 @@ function Home(props) {
           />
         </SectionInfo>
       </Section>
-
-      <Footer />
-    </React.Fragment>
+    </Layout>
   );
 }
 
