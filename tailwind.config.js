@@ -71,7 +71,7 @@ module.exports = {
           ".text-subtitle2": {
             fontFamily,
             fontWeight: 600,
-            fontSize: "1.517rem",
+            fontSize: "1.15rem",
             lineHeight: "32.36px",
           },
           ".text-subtitle3": {
@@ -104,10 +104,9 @@ module.exports = {
           },
           ".text-body3": {
             fontFamily,
-            fontWeight: 400,
+            fontWeight: 300,
             fontSize: "0.8rem",
-            lineHeight: 1.4,
-            letterSpacing: "0.01071em",
+            lineHeight: "21px",
           },
           ".text-button": {
             fontFamily,

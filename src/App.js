@@ -1,12 +1,17 @@
 import React from "react";
-import { Route } from "react-router";
+// import { Route, Router } from "react-router";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <React.Suspense fallback={<div></div>}>
-      {ROUTES.map((route, key) => (
-        <Route key={key} {...route} />
-      ))}
+    <React.Suspense fallback={<div>Loading...</div>}>
+      <Router>
+        <Switch>
+          {ROUTES.map((route, key) => (
+            <Route key={key} {...route} />
+          ))}
+        </Switch>
+      </Router>
     </React.Suspense>
   );
 }
@@ -14,11 +19,11 @@ function App() {
 export default App;
 
 const ROUTES = [
-  { path: "/", component: React.lazy(() => import("./pages/home/Home")) },
   {
-    path: "business-banking",
+    path: "/business-banking",
     component: React.lazy(() =>
       import("./pages/businessBankAccount/BusinessBankAccount")
     ),
   },
+  { path: "/", component: React.lazy(() => import("./pages/home/Home")) },
 ];

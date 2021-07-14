@@ -3,23 +3,26 @@ import Section from "components/section/Section";
 import SectionInfoTitle from "components/section/SectionInfoTitle";
 import SectionInfoDescription from "components/section/SectionInfoDescription";
 import SectionInfo from "components/section/SectionInfo";
+import Button from "components/button/Button";
 
-export default function SectionHeader() {
+export default function SectionHeader({
+  title,
+  description,
+  buttonLabel,
+  img,
+}) {
   return (
     <div>
       <Section className="flex items-center justify-center flex-wrap">
         <SectionInfo>
-          <SectionInfoTitle header>
-            Debit & Virtual Card without Stress.
-          </SectionInfoTitle>
-          <SectionInfoDescription>
-            We ensure you can make secure business expenses through debit and
-            virtual cards.
-          </SectionInfoDescription>
-          <SectionInfoTitle>Business card</SectionInfoTitle>
+          <SectionInfoTitle header>{title}</SectionInfoTitle>
+          <SectionInfoDescription>{description}</SectionInfoDescription>
+          <Button bgColor="bg-secondary px-2" style={{ minWidth: "140px" }}>
+            {buttonLabel}
+          </Button>
         </SectionInfo>
         <SectionInfo>
-          {/* <HomeVirtualCardSvg className="w-full" /> */}
+          <img src={img} alt={title} />
         </SectionInfo>
       </Section>
     </div>

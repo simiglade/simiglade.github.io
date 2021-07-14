@@ -8,8 +8,6 @@ import SectionInfoDescription from "components/section/SectionInfoDescription";
 import { ReactComponent as HomeBusinessSvg } from "./HomeBusinesses.svg";
 import { ReactComponent as HomeFreelancerSvg } from "./HomeFreelancer.svg";
 import { ReactComponent as HomeStartupSvg } from "./HomeStartup.svg";
-import { ReactComponent as HomeDashboardSvg } from "./HomeDashboard.svg";
-import { ReactComponent as HomeVirtualCardSvg } from "./HomeVirtualCard.svg";
 import "./Home.css";
 import { ArrowDown } from "../../utils/icons";
 
@@ -17,10 +15,11 @@ import HomeExecutive from "./HomeRegisterComapny.png";
 import HomePos from "./HomePOS.png";
 import HomeDashboard from "./HomeDashboard.png";
 import DashboardMobile from "./DashboardMobile.png";
-import DashboardMerchant from "./DashboardMerchant.png";
-import appStoreImg from "assets/img/footer-app-store.png";
-import googlePlayImg from "assets/img/footer-google-play.png";
+
 import Layout from "../../components/Layout";
+import SectionDebitVirtualCard from "../../components/section/SectionDebitVirtualCard";
+import SectionBusinessAccount from "../../components/section/SectionBusinessAccount";
+import SectionMoreThanBank from "../../components/section/SectionMoreThanBank";
 
 function Home(props) {
   const [isVideoLoaded, setIsVideoLoaded] = React.useState(false);
@@ -100,80 +99,11 @@ function Home(props) {
           </div>
         </div>
       </Section>
-      <Section className="flex items-center justify-between flex-wrap">
-        <SectionInfo>
-          <HomeDashboardSvg className="w-full" />
-        </SectionInfo>
-        <SectionInfo>
-          <SectionInfoTitle header>
-            More than just a bank account
-          </SectionInfoTitle>
-          <SectionInfoDescription>
-            A business current account that is packed with features which save
-            you time and money.
-          </SectionInfoDescription>
+      {/* More than just a bank  */}
+      <SectionMoreThanBank />
 
-          <SectionInfoTitle>
-            <span class="material-icons md-18 mr-3 mt-3 text-green-400 fill-current">
-              check_circle
-            </span>
-            Business current account
-          </SectionInfoTitle>
-          <SectionInfoDescription>
-            Free business bank accounts built specifically for small businesses-
-            All inclusive; invoicing, virtual cards, store management tools with
-            no hidden charges.
-          </SectionInfoDescription>
-          <SectionInfoTitle>
-            <span class="material-icons md-18 mr-3 mt-3 text-green-400 fill-current">
-              check_circle
-            </span>
-            Financing
-          </SectionInfoTitle>
-          <SectionInfoDescription>
-            Loans and Overafts to finance and fund your business on rainy days,
-            With flexible payment plans.
-          </SectionInfoDescription>
-          <SectionInfoTitle>
-            <span class="material-icons md-18 mr-3 mt-3 text-green-400 fill-current">
-              check_circle
-            </span>
-            Payments
-          </SectionInfoTitle>
-          <SectionInfoDescription>
-            Go cashless by making and accepting payments via Bank Transfer,
-            Cards, Mobile Money, USSD, QR Pay and point-of-sale (POS) at a very
-            low cost.
-          </SectionInfoDescription>
-        </SectionInfo>
-      </Section>
-      <Section className="flex items-center justify-between flex-wrap">
-        <SectionInfo>
-          <SectionInfoTitle header>
-            Debit & Virtual Card without Stress.
-          </SectionInfoTitle>
-          <SectionInfoDescription>
-            We ensure you can make secure business expenses through debit and
-            virtual cards.
-          </SectionInfoDescription>
-          <SectionInfoTitle>Business card</SectionInfoTitle>
-          <SectionInfoDescription>
-            Get a debit card to manage your business expense.
-          </SectionInfoDescription>
-          <SectionInfoTitle>Dollar card</SectionInfoTitle>
-          <SectionInfoDescription>
-            Create a virtual dollar card to manage your USD expenses for
-            international transactions.
-          </SectionInfoDescription>
-          <SectionInfoTitle>Stay in control</SectionInfoTitle>
-          <SectionInfoDescription>
-            Set spending limits, lock and unlock your card, change Pin.
-          </SectionInfoDescription>
-        </SectionInfo>
-        <SectionInfo>
-          <HomeVirtualCardSvg className="w-full" />
-        </SectionInfo>
-      </Section>
+      {/* Debit card section */}
+      <SectionDebitVirtualCard />
       <div
         style={{
           background:
@@ -435,13 +365,16 @@ function Home(props) {
                     <div>
                       <div class="w-full">
                         <input
-                          className="mt-5 appearance-none border-2 border-gray-200  w-full py-4 px-5 text-gray-700 leading-tight focus:outline-none bg-white focus:border-blue-500"
+                          className="mt-5 appearance-none border-2 border-gray-200  w-full py-4 px-5 text-gray-700 leading-tight focus:outline-none bg-white focus:border-blue-100"
                           id="inline-password"
                           type="email"
                           placeholder="Enter your email"
                         />
                       </div>
-                      <div className="text-body3 text-textPrimaryLighter mt-3 max-w-md">
+                      <div
+                        style={{ lineHeight: "16px" }}
+                        className="text-body3 text-textPrimaryLighter mt-3 max-w-md"
+                      >
                         By subscribing you agree to receive marketing
                         communications from Glade. You can unsubscribe anytime
                         using the link in the footer of any of our emails. See
@@ -458,35 +391,8 @@ function Home(props) {
           </section>
         </div>
       </div>
-
-      <Section className="flex items-center justify-between flex-wrap">
-        <SectionInfo>
-          <div className="mb-5">
-            <SectionInfoTitle header>
-              A business bank account where the possibilities are endless
-            </SectionInfoTitle>
-            <SectionInfoDescription>
-              Set up your account with these easy steps.
-            </SectionInfoDescription>
-          </div>
-          <Button bgColor="bg-secondary">Register your company</Button>
-          <div className="flex mt-10">
-            <a href="/" className="mr-1">
-              <img src={appStoreImg} alt="appstore" className="m-1" />
-            </a>
-            <a href="/">
-              <img src={googlePlayImg} alt="googleplay" className="m-1" />
-            </a>
-          </div>
-        </SectionInfo>
-        <SectionInfo>
-          <img
-            src={DashboardMerchant}
-            className="max-h-96"
-            alt="Glade dashboard mobile"
-          />
-        </SectionInfo>
-      </Section>
+      {/* Business Account scetion */}
+      <SectionBusinessAccount />
     </Layout>
   );
 }
