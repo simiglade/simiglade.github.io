@@ -72,7 +72,11 @@ export default function SectionEmbededAPI() {
                       </button>
                     </li>
                     <li>
-                      <a href="/" target="_blank">
+                      <a
+                        href="https://developer.glade.ng/"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <button>Digital Services API</button>
                       </a>
                     </li>
