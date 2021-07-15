@@ -27,6 +27,29 @@ function Home(props) {
   const onLoadedData = () => {
     setIsVideoLoaded(true);
   };
+
+  const customers = [
+    {
+      title: "CEO, Mustees Clothing",
+      description:
+        "Its amazing to be able to receive instant settlements, the customer service at Glade is of an exceptional standard. I'd recommend it to all business online",
+    },
+    {
+      title: "Project manager, NobleGate",
+      description:
+        "I can testify of their credibility. I have never been stranded with Glade. They are experts in treating their customers right. Thumbs up!",
+    },
+    {
+      title: "Head of Growth, Payforce",
+      description:
+        "I want to thank the Glade team for their support during our project. Our service is now more efficient today &amp; sales have increased by 70%. Thank you once more guys & don't stop doing what you do.",
+    },
+    {
+      title: "Canbillaire Nigeria Ltd.",
+      description:
+        "I have found Glade to be one of the most reliable payment solutions i've ever used. The insights dashboard has helped me target and reward my most valued customers.",
+    },
+  ];
   return (
     <Layout>
       <div className="bg-primary-dark bg-opacity-80 relative">
@@ -122,18 +145,27 @@ function Home(props) {
               Everything your business needs built into your phone and laptop.
             </SectionInfoDescription>
             <SectionInfoTitle style={{ color: "white" }}>
+              <span class="material-icons md-18 mr-3 mt-3 text-white fill-current">
+                check_circle
+              </span>
               Invoicing
             </SectionInfoTitle>
             <SectionInfoDescription style={{ color: "white" }}>
               Create and send invoices to customer and request for payments.
             </SectionInfoDescription>
             <SectionInfoTitle style={{ color: "white" }}>
+              <span class="material-icons md-18 mr-3 mt-3 text-white fill-current">
+                check_circle
+              </span>
               Staff Payroll
             </SectionInfoTitle>
             <SectionInfoDescription style={{ color: "white" }}>
               Manage employees schedules and payroll.
             </SectionInfoDescription>
             <SectionInfoTitle style={{ color: "white" }}>
+              <span class="material-icons md-18 mr-3 mt-3 text-white fill-current">
+                check_circle
+              </span>{" "}
               Payments
             </SectionInfoTitle>
             <SectionInfoDescription style={{ color: "white" }}>
@@ -141,6 +173,9 @@ function Home(props) {
               inflows.
             </SectionInfoDescription>
             <SectionInfoTitle style={{ color: "white" }}>
+              <span class="material-icons md-18 mr-3 mt-3 text-white fill-current">
+                check_circle
+              </span>
               Customer Insights
             </SectionInfoTitle>
             <SectionInfoDescription style={{ color: "white" }}>
@@ -306,28 +341,7 @@ function Home(props) {
           </SectionInfoTitle>
 
           <div className="flex flex-wrap justify-center  -mx-2">
-            {[
-              {
-                title: "CEO, Mustees Clothing",
-                description:
-                  "Its amazing to be able to receive instant settlements, the customer service at Glade is of an exceptional standard. I'd recommend it to all business online",
-              },
-              {
-                title: "Project manager, NobleGate",
-                description:
-                  "I can testify of their credibility. I have never been stranded with Glade. They are experts in treating their customers right. Thumbs up!",
-              },
-              {
-                title: "Head of Growth, Payforce",
-                description:
-                  "I want to thank the Glade team for their support during our project. Our service is now more efficient today &amp; sales have increased by 70%. Thank you once more guys & don't stop doing what you do.",
-              },
-              {
-                title: "Canbillaire Nigeria Ltd.",
-                description:
-                  "I have found Glade to be one of the most reliable payment solutions i've ever used. The insights dashboard has helped me target and reward my most valued customers.",
-              },
-            ].map(({ title, description }, key) => (
+            {customers.map(({ title, description }, key) => (
               <div key={key} className="w-full md:w-1/4 sm:w-1/2 p-2">
                 <div
                   className="m-3 h-full  p-8"
