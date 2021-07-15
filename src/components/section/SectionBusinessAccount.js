@@ -10,7 +10,10 @@ import Button from "components/button/Button";
 
 export default function SectionBusinessAccount() {
   return (
-    <Section className="flex items-center justify-between flex-wrap">
+    <Section
+      className="flex items-center justify-between flex-wrap"
+      style={{ paddingBottom: "0px" }}
+    >
       <SectionInfo>
         <div className="mb-5">
           <SectionInfoTitle header>
@@ -30,10 +33,10 @@ export default function SectionBusinessAccount() {
           </a>
         </div>
       </SectionInfo>
-      <SectionInfo>
+      <SectionInfo style={{ paddingBottom: "0px" }}>
         <img
           src={DashboardMerchant}
-          className="max-h-96"
+          style={{ maxWidth: "300px" }}
           alt="Glade dashboard mobile"
         />
       </SectionInfo>

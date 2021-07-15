@@ -1,11 +1,13 @@
-.Footer {}
+.Footer {
+  background-color: #E9F9FF;
+}
 
 .Footer__item__header {
   line-height: 21.92px;
-  font-size: 1.125rem;
-  font-weight: 700;
+  font-size: 1rem;
+  font-weight: 600;
   color: #7782BF;
-  margin-bottom: .25rem;
+  margin-bottom: .18rem;
   text-transform: uppercase;
 }
 
@@ -43,6 +45,6 @@
 }
 
 .Footer__item__slack {
-  font-weight: 400;
-  font-size: 1.3rem;
+  font-weight: 700;
+  font-size: 1rem;
 }

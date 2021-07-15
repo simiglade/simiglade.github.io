@@ -1,5 +1,4 @@
 import React from "react";
-import Logo from "components/Logo";
 import "./Footer.css";
 import facebookImg from "assets/img/footer-facebook.png";
 import instagramImg from "assets/img/footer-instagram.png";
@@ -32,12 +31,9 @@ function Footer(props) {
     },
   ];
   return (
-    <div className="Footer flex justify-center bg-primary-light bg-opacity-10 p-8">
-      <div className="container flex md:flex-row flex-col">
-        <div className="flex-0 p-1">
-          <Logo />
-        </div>
-        <div className="flex-1 p-1">
+    <div className="Footer flex justify-center bg-opacity-10 p-20">
+      <div className="max-w-6xl px-5 grid grid-cols-3 gap-8">
+        <div>
           <div>
             <p className="Footer__item__text">
               Proudly made for small businesses, startups, and freelancers. Our
@@ -51,35 +47,38 @@ function Footer(props) {
             <p className="Footer__item__text">
               Tel: +234 817 557 4227 | support@glade.ng
             </p>
-            <div className="Footer__item__text flex space-x-4">
+            <div className="Footer__item__text flex space-x-3">
               {SOCIAL_MEDIAS.map(({ image, href }) => (
                 <a href={href} target="_blank" rel="noreferrer">
-                  <img src={image} alt="facebook" />
+                  <img src={image} width={25} alt="facebook" />
                 </a>
               ))}
               <p className="Footer__item__slack">
-                <a href="/" className="text-primary">Slack Us</a> Here
+                <a href="/" className="text-primary">
+                  Slack us
+                </a>{" "}
+                Here
               </p>
             </div>
           </div>
         </div>
-        <div className="flex-1 p-1">
+        <div>
           <p className="Footer__item__header">HEAD QUATERS</p>
           <p className="Footer__item__text">
             651 N Broad St, Suite 206 Middletown, 19709 New Castle, Delaware,
             US.
           </p>
           <p className="Footer__item__header">NIGERIA</p>
-          <p className="Footer__item__text">
+          <p className="Footer__item__text max-w-xs">
             2 Crown Court Estate 2, Oniru Victoria Island Lagos.
           </p>
-          <p className="Footer__item__text">
+          <p className="Footer__item__text max-w-xs">
             No. 15 J.J. Oluleye Street, Utako Abuja.
           </p>
         </div>
-        <div className="flex-1 p-1">
+        <div>
           <p className="Footer__item__header">CERTIFIED</p>
-          <p className="Footer__item__text">
+          <p className="Footer__item__text max-w-xs">
             Mastercard Securecode, Verified by VISA, PCI DSS Compliant.
           </p>
           <p className="Footer__item__toplink">
@@ -96,10 +95,10 @@ function Footer(props) {
             © Glade 2021. All Rights Reserved
           </p>
           <div className="flex md:flex-row flex-col">
-            <img src={appStoreImg} width={100} alt="appstore" className="m-1" />
+            <img src={appStoreImg} width={150} alt="appstore" className="m-1" />
             <img
               src={googlePlayImg}
-              width={100}
+              width={150}
               alt="googleplay"
               className="m-1"
             />
@@ -113,8 +112,8 @@ function Footer(props) {
 export default Footer;
 
 const SOCIAL_MEDIAS = [
-  { link: "", image: facebookImg },
-  { link: "", image: instagramImg },
-  { link: "", image: twitterImg },
-  { link: "", image: linkedinImg },
+  { link: "/", image: facebookImg },
+  { link: "/", image: instagramImg },
+  { link: "/", image: twitterImg },
+  { link: "/", image: linkedinImg },
 ];
