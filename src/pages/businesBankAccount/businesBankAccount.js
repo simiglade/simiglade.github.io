@@ -4,6 +4,8 @@ import Layout from "../../components/Layout";
 import SectionBusinessAccount from "components/section/SectionBusinessAccount";
 import BusinessOwner from "./BusinessOwner.png";
 import BusinessCard from "./BusinessCard.png";
+import BusinessInvoice from "./BusinessInvoice.png";
+import BusinessPayment from "./BusinessPayment.png";
 import SectionDebitVirtualCard from "../../components/section/SectionDebitVirtualCard";
 import SectionMoreThanBank from "components/section/SectionMoreThanBank";
 import SectionInfoTitle from "components/section/SectionInfoTitle";
@@ -29,28 +31,28 @@ export default function BusinesBankAccount() {
       title: "Invoicing",
       description:
         "Create and send invoices to customer and request for payments.",
-      icon: BusinessCard,
+      icon: BusinessPayment,
     },
     {
       title: "Payroll",
       description: "Manage employees schedules and payroll.",
-      icon: BusinessCard,
+      icon: BusinessInvoice,
     },
     {
       title: "Send money",
       description: "Send money locally and internationally at low rates.",
-      icon: BusinessCard,
+      icon: BusinessInvoice,
     },
     {
       title: "Loans",
       description: "Access loans & overdrafts to grow your business.",
-      icon: BusinessCard,
+      icon: BusinessInvoice,
     },
     {
       title: "Card services",
       description:
         "Get a business debit or virtual card to enable you make payments seamlessly.",
-      icon: BusinessCard,
+      icon: BusinessInvoice,
     },
   ];
   return (
@@ -68,7 +70,7 @@ export default function BusinesBankAccount() {
         className="flex justify-center"
       >
         <div className="py-20 container">
-          <SectionInfoTitle header className="text-center mb-10">
+          <SectionInfoTitle header className="text-center mb-20">
             Access the right business features needed to grow
           </SectionInfoTitle>
 
