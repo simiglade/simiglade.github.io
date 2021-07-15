@@ -9,6 +9,7 @@ export default function SectionHeader({
   title,
   description,
   buttonLabel,
+  buttonLink,
   img,
 }) {
   return (
@@ -17,9 +18,11 @@ export default function SectionHeader({
         <SectionInfo>
           <SectionInfoTitle header>{title}</SectionInfoTitle>
           <SectionInfoDescription>{description}</SectionInfoDescription>
-          <Button bgColor="bg-secondary px-2" style={{ minWidth: "140px" }}>
-            {buttonLabel}
-          </Button>
+          <a href={buttonLink || "/"} target="_blank" rel="noreferrer">
+            <Button bgColor="bg-secondary px-2" style={{ minWidth: "140px" }}>
+              {buttonLabel}
+            </Button>
+          </a>
         </SectionInfo>
         <SectionInfo>
           <img src={img} alt={title} />

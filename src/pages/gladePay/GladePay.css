@@ -1,0 +1,37 @@
+.check_circle_light {
+    color: white;
+    background: #cdccfa;
+    width: 24px;
+    height: 24px;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    padding: .2rem;
+    font-size: .89rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.api-demo-header li {
+    list-style: none;
+    margin-bottom: 1rem;
+
+}
+
+.api-demo-header li button {
+    background-color: #e5f7fd;
+    padding: .8rem 2rem;
+    border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+    color: #39c1f2;
+    border-left: 4px solid transparent;
+    width: 100%;
+}
+
+.api-demo-header li button.active {
+    border-left: 4px solid #39c1f2;
+}
+
+.api-demo-header li button:hover {
+    opacity: .7;
+}
