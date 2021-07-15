@@ -4,6 +4,7 @@ import SectionInfoDescription from "components/section/SectionInfoDescription";
 import Button from "components/button/Button";
 import Embed from "react-runkit";
 import "pages/gladePay/GladePay.css";
+import { Link } from "react-router-dom";
 
 export default function SectionEmbededAPI() {
   const [state, setstate] = useState(0);
@@ -27,7 +28,7 @@ export default function SectionEmbededAPI() {
 
           <div className="flex justify-center mt-8">
             <div class=" max-w-3xl w-full">
-              <div className="flex">
+              <div className="flex md:flex-row flex-col">
                 <div className="api-demo-header flex-0 p-4">
                   <ul>
                     <li>
@@ -71,7 +72,9 @@ export default function SectionEmbededAPI() {
                       </button>
                     </li>
                     <li>
-                      <button>Digital Services API</button>
+                      <a href="/" target="_blank">
+                        <button>Digital Services API</button>
+                      </a>
                     </li>
                   </ul>
                 </div>
