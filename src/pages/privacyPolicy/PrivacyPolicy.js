@@ -3,7 +3,6 @@ import Layout from "../../components/Layout";
 import Section from "components/section/Section";
 import SectionInfoTitle from "components/section/SectionInfoTitle";
 import SectionInfoDescription from "components/section/SectionInfoDescription";
-import SectionInfo from "components/section/SectionInfo";
 
 export default function PrivacyPolicy() {
   return (

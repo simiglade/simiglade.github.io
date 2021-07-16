@@ -14,6 +14,7 @@ import StartUps from "./pages/startups/Startups";
 import ContactUs from "./pages/contactUs/ContactUs";
 import Brand from "./pages/brand/Brand";
 import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
+import TermsAndCondition from "./pages/termsAndCondition/TermsAndCondition";
 
 function App() {
   return (
@@ -82,6 +83,10 @@ const ROUTES = [
   {
     path: "/privacy-policy",
     component: PrivacyPolicy,
+  },
+  {
+    path: "/terms-and-conditions",
+    component: TermsAndCondition,
   },
   { path: "/", component: Home },
 ];
