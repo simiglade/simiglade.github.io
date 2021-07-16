@@ -20,6 +20,30 @@ export default function PrivacyPolicy() {
           >
             Last Updated: 25th August, 2018
           </SectionInfoTitle>
+          <div className="mb-20">
+            <SectionInfoTitle className="mt-10">
+              Personal Information
+            </SectionInfoTitle>
+            <SectionInfoDescription>
+              We collect and use your information below to provide, understand,
+              and improve our Services, to administer your use of the Services,
+              to respond to all your comments, feedbacks and questions, to use
+              your email address or other contact information to send you
+              information related to the Services and to enable you to enjoy and
+              easily navigate our Services. Glade has implemented and will
+              maintain reasonable security controls to protect the
+              confidentiality, integrity and availability of the PII that Glade
+              processes. “PII”, “Personally Identifiable Information” and
+              “personal data” are all used in this Privacy Policy
+              interchangeably to refer to any data, information, or combination
+              of data and information that is provided by you to Glade Inc. or
+              through your use of our Services, and which relates to an
+              identifiable individual.
+            </SectionInfoDescription>
+          </div>
+          <SectionInfoTitle>
+            What we do to Information Collected?
+          </SectionInfoTitle>
           {privacy.map(({ title, description }, key) => (
             <div key={key} className="mb-20">
               <SectionInfoTitle className="mt-10">{title}</SectionInfoTitle>
@@ -51,12 +75,6 @@ export default function PrivacyPolicy() {
 }
 
 const privacy = [
-  {
-    title: "Personal Information",
-    description: [
-      "We collect and use your information below to provide, understand, and improve our Services, to administer your use of the Services, to respond to all your comments, feedbacks and questions, to use your email address or other contact information to send you information related to the Services and to enable you to enjoy and easily navigate our Services. Glade has implemented and will maintain reasonable security controls to protect the confidentiality, integrity and availability of the PII that Glade processes. “PII”, “Personally Identifiable Information” and “personal data” are all used in this Privacy Policy interchangeably to refer to any data, information, or combination of data and information that is provided by you to Glade Inc. or through your use of our Services, and which relates to an identifiable individual.",
-    ],
-  },
   {
     title: "Personal Information",
     description: [
