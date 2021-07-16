@@ -90,26 +90,24 @@ export default function GladeSMELoans() {
         </Section>
       </section>
 
-      <section style={{ backgroundColor: "#E9F9FF" }}>
-        <Section className="flex items-center justify-between flex-wrap">
-          <SectionInfo>
-            <div className="mb-5">
-              <SectionInfoTitle header>₦100M+</SectionInfoTitle>
-              <SectionInfoTitle>
-                worth of SME loans have already been given out
-              </SectionInfoTitle>
-            </div>
-            <Button bgColor="bg-secondary">Apply for a loan</Button>
-          </SectionInfo>
-          <SectionInfo>
-            <img
-              src={BusinessBusinessOwner}
-              className="max-h-96"
-              alt="Glade dashboard mobile"
-            />
-          </SectionInfo>
-        </Section>
-      </section>
+      <Section className="flex items-center justify-between flex-wrap">
+        <SectionInfo>
+          <div className="mb-5">
+            <SectionInfoTitle header>₦100M+</SectionInfoTitle>
+            <SectionInfoTitle>
+              worth of SME loans have already been given out
+            </SectionInfoTitle>
+          </div>
+          <Button bgColor="bg-secondary">Apply for a loan</Button>
+        </SectionInfo>
+        <SectionInfo>
+          <img
+            src={BusinessBusinessOwner}
+            className="max-h-96"
+            alt="Glade dashboard mobile"
+          />
+        </SectionInfo>
+      </Section>
 
       <Section className="flex items-center justify-between flex-wrap">
         <SectionInfo>
