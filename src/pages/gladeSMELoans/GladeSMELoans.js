@@ -8,7 +8,6 @@ import BusinessLoanApp from "./BusinessLoanApp.png";
 import BusinessSMELoans from "./BusinessSMELoans.png";
 import Section from "components/section/Section";
 import SectionInfo from "components/section/SectionInfo";
-import SectionEmbededAPI from "../../components/section/SectionEmbededAPI";
 import Button from "components/button/Button";
 
 export default function GladeSMELoans() {
