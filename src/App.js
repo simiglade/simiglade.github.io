@@ -8,6 +8,7 @@ import GladePOS from "./pages/gladePOS/GladePOS";
 import GladePay from "./pages/gladePay/GladePay";
 import GladeSMELoans from "./pages/gladeSMELoans/GladeSMELoans";
 import GladeStore from "./pages/gladeStore/GladeStore";
+import Freelancers from "./pages/freelancers/Freelancers";
 
 function App() {
   return (
@@ -48,6 +49,11 @@ const ROUTES = [
   {
     path: "/glade-store",
     component: GladeStore,
+  },
+
+  {
+    path: "/freelancers",
+    component: Freelancers,
   },
   { path: "/", component: Home },
 ];
