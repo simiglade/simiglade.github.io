@@ -99,7 +99,7 @@ export default function GladeSMELoans() {
                 worth of SME loans have already been given out
               </SectionInfoTitle>
             </div>
-            <Button bgColor="bg-primary">Apply for a loan</Button>
+            <Button bgColor="bg-secondary">Apply for a loan</Button>
           </SectionInfo>
           <SectionInfo>
             <img
