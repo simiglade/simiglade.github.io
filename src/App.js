@@ -13,6 +13,7 @@ import GrowingBusinesses from "./pages/growingBusinesses/GrowingBusinesses";
 import StartUps from "./pages/startups/Startups";
 import ContactUs from "./pages/contactUs/ContactUs";
 import Brand from "./pages/brand/Brand";
+import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
 
 function App() {
   return (
@@ -76,6 +77,11 @@ const ROUTES = [
   {
     path: "/brand",
     component: Brand,
+  },
+
+  {
+    path: "/privacy-policy",
+    component: PrivacyPolicy,
   },
   { path: "/", component: Home },
 ];

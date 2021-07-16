@@ -10,7 +10,7 @@ import Button from "components/button/Button";
 export default function Brand() {
   return (
     <Layout>
-      <Section className="flex items-center justify-between flex-wrap">
+      <Section className="flex px-4 items-center justify-between flex-wrap">
         <SectionInfo>
           <img src={BrandColor} alt="Brand Color" />
         </SectionInfo>
