@@ -104,7 +104,7 @@ module.exports = {
           },
           ".text-body3": {
             fontFamily,
-            fontWeight: 300,
+            fontWeight: 400,
             fontSize: "0.8rem",
             lineHeight: "21px",
           },
