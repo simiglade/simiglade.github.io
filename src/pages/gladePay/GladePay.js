@@ -37,7 +37,7 @@ export default function GladePay() {
           </SectionInfo>
           <SectionInfo>
             <SectionInfoTitle header>What is GladePay?</SectionInfoTitle>
-            <SectionInfoDescription>
+            <SectionInfoDescription style={{ color: "#7782BF" }}>
               GladePay is a payment gateway that supports businesses to make an
               accept payments from their customers.{" "}
             </SectionInfoDescription>
@@ -48,7 +48,7 @@ export default function GladePay() {
               </span>
               Web SDK
             </SectionInfoTitle>
-            <SectionInfoDescription>
+            <SectionInfoDescription style={{ color: "#7782BF" }}>
               You can collect payments from your customers via cards, account
               transfers, QR Code and USSD on your platform by easily integrating
               our web SDK
@@ -59,7 +59,7 @@ export default function GladePay() {
               </span>
               Mobile SDK
             </SectionInfoTitle>
-            <SectionInfoDescription>
+            <SectionInfoDescription style={{ color: "#7782BF" }}>
               GladePay's mobile SDK allows you to receive card and account
               transfer payments from your customers in-app.
             </SectionInfoDescription>
@@ -69,7 +69,7 @@ export default function GladePay() {
               </span>
               API
             </SectionInfoTitle>
-            <SectionInfoDescription>
+            <SectionInfoDescription style={{ color: "#7782BF" }}>
               GladePay's documented APIs provides you with all you need to build
               your custom projects and products.{" "}
               <a href="/" className="text-secondary">
@@ -82,7 +82,9 @@ export default function GladePay() {
 
       <Section className="flex items-center justify-between flex-wrap">
         <SectionInfo>
-          <SectionInfoTitle>Our API has got you covered</SectionInfoTitle>
+          <SectionInfoTitle header>
+            Our API has got you covered
+          </SectionInfoTitle>
           <SectionInfoDescription>
             Anything you want to do with your project, you can do it with our
             RESTful open API.

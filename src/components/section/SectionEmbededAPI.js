@@ -4,7 +4,6 @@ import SectionInfoDescription from "components/section/SectionInfoDescription";
 import Button from "components/button/Button";
 import Embed from "react-runkit";
 import "pages/gladePay/GladePay.css";
-import { Link } from "react-router-dom";
 
 export default function SectionEmbededAPI() {
   const [state, setstate] = useState(0);
@@ -15,7 +14,7 @@ export default function SectionEmbededAPI() {
         <div className="container">
           <div className="text-center flex justify-center">
             <div>
-              <SectionInfoTitle>
+              <SectionInfoTitle header style={{ margin: "0 auto" }}>
                 Build amazing products with our API
               </SectionInfoTitle>
               <SectionInfoDescription className="max-w-sm">

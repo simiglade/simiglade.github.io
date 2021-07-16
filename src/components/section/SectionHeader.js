@@ -16,7 +16,17 @@ export default function SectionHeader({
     <div>
       <Section className="flex items-center justify-center flex-wrap">
         <SectionInfo>
-          <SectionInfoTitle header>{title}</SectionInfoTitle>
+          <SectionInfoTitle
+            header
+            style={{
+              fontWeight: 800,
+              fontSize: "3rem",
+              color: "#010040, 100%",
+              lineHeight: "64px",
+            }}
+          >
+            {title}
+          </SectionInfoTitle>
           <SectionInfoDescription>{description}</SectionInfoDescription>
           <a href={buttonLink || "/"} target="_blank" rel="noreferrer">
             <Button bgColor="bg-secondary px-2" style={{ minWidth: "140px" }}>
