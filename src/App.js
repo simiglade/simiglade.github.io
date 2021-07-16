@@ -7,6 +7,7 @@ import ScrollToTop from "utils/ScrollToTop";
 import GladePOS from "./pages/gladePOS/GladePOS";
 import GladePay from "./pages/gladePay/GladePay";
 import GladeSMELoans from "./pages/gladeSMELoans/GladeSMELoans";
+import GladeStore from "./pages/gladeStore/GladeStore";
 
 function App() {
   return (
@@ -43,6 +44,10 @@ const ROUTES = [
   {
     path: "/glade-sme-loans",
     component: GladeSMELoans,
+  },
+  {
+    path: "/glade-store",
+    component: GladeStore,
   },
   { path: "/", component: Home },
 ];
