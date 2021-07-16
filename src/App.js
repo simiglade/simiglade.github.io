@@ -11,6 +11,8 @@ import GladeStore from "./pages/gladeStore/GladeStore";
 import Freelancers from "./pages/freelancers/Freelancers";
 import GrowingBusinesses from "./pages/growingBusinesses/GrowingBusinesses";
 import StartUps from "./pages/startups/Startups";
+import ContactUs from "./pages/contactUs/ContactUs";
+import Brand from "./pages/brand/Brand";
 
 function App() {
   return (
@@ -66,6 +68,14 @@ const ROUTES = [
   {
     path: "/startups",
     component: StartUps,
+  },
+  {
+    path: "/contact-us",
+    component: ContactUs,
+  },
+  {
+    path: "/brand",
+    component: Brand,
   },
   { path: "/", component: Home },
 ];

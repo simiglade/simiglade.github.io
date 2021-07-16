@@ -7,7 +7,9 @@
   color: hsl(231, 36%, 61%) !important;
 }
 
-
+.input-text {
+  @apply block w-full bg-gray-100 text-gray-500 border rounded py-3 px-4 mb-3 leading-tight focus: outline-none focus:bg-white;
+}
 
 /* Inter font face */
 @font-face {
