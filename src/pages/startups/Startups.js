@@ -4,10 +4,10 @@ import Layout from "../../components/Layout";
 import SectionInfoTitle from "components/section/SectionInfoTitle";
 import SectionInfoDescription from "components/section/SectionInfoDescription";
 import BusinessOwner from "./BusinessOwner.png";
+import Startups from "./Startups.png";
 
 import Section from "components/section/Section";
 import SectionInfo from "components/section/SectionInfo";
-import Button from "components/button/Button";
 import SectionDebitVirtualCard from "../../components/section/SectionDebitVirtualCard";
 import HomeGladeService from "pages/home/HomeGladeService.png";
 import StartupOwner from "./StartupOwner.png";
@@ -93,40 +93,6 @@ export default function StartUps() {
 
       <Section className="flex items-center justify-between flex-wrap">
         <SectionInfo>
-          <img
-            src={HomeGladeService}
-            className="max-h-96"
-            alt="Glade dashboard mobile"
-          />
-        </SectionInfo>
-        <SectionInfo>
-          <div className="mb-5">
-            <SectionInfoTitle header>
-              Integrated Business Platform
-            </SectionInfoTitle>
-
-            <div className="mb-5">
-              <SectionInfoDescription>
-                Glade eliminates the time and hassle of business banking. A
-                simply designed, fast and delightful personal service. Plus,
-                it’s full of amazing features that makes managing your business
-                finances easy. No finance degree required.
-              </SectionInfoDescription>
-            </div>
-            <Button bgColor="bg-primary">Open an Account</Button>
-          </div>
-        </SectionInfo>
-      </Section>
-
-      <Section className="flex items-center justify-between flex-wrap">
-        <SectionInfo>
-          <img
-            src={StartupOwner}
-            className="max-h-96"
-            alt="Glade dashboard mobile"
-          />
-        </SectionInfo>
-        <SectionInfo>
           <div className="mb-5">
             <SectionInfoTitle header>
               Supporting you all the way
@@ -138,7 +104,27 @@ export default function StartUps() {
             </SectionInfoDescription>
           </div>
         </SectionInfo>
+        <SectionInfo>
+          <img
+            src={StartupOwner}
+            className="max-h-96"
+            alt="Glade dashboard mobile"
+          />
+        </SectionInfo>
       </Section>
+
+      <section className="px-4 py-20 flex justify-center">
+        <div className="container">
+          <SectionInfoTitle header className="mb-8 text-center">
+            Here are some start-ups that trust us with their business.
+          </SectionInfoTitle>
+          <div className="flex justify-center">
+            <div>
+              <img src={Startups} alt="startups" />
+            </div>
+          </div>
+        </div>
+      </section>
     </Layout>
   );
 }
