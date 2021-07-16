@@ -18,4 +18,5 @@ export const RouteEnum = {
   ABOUT_US: "/about-us",
   CONTACT_US: "/contact-us",
   BLOG: "/blog",
+  GLADE_SME_LOANS: "/glade-sme-loans"
 };

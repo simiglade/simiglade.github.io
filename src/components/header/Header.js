@@ -158,6 +158,13 @@ const LINKS = [
             description:
               "Available for innovators like you to build amazing solutions seamlessly.",
           },
+
+          {
+            label: "Glade SME Loans",
+            path: RouteEnum.GLADE_SME_LOANS,
+            description:
+              "Available for innovators like you to build amazing solutions seamlessly.",
+          },
         ],
       },
       {

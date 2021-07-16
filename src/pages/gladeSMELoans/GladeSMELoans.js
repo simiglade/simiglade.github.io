@@ -101,7 +101,7 @@ export default function GladeSMELoans() {
           </SectionInfoDescription>
 
           <div className="mt-8 flex justify-between flex-col md:flex-row">
-            <div>
+            <div className="mr-2">
               <SectionInfoDescription className="flex mb-5">
                 <div className="inline-block ">
                   <span class="check_circle_light  material-icons fill-current mr-5">
@@ -139,9 +139,8 @@ export default function GladeSMELoans() {
                 Get loans within 3 hours
               </SectionInfoDescription>
             </div>
-
-            <Button bgColor="bg-primary">Open an account</Button>
           </div>
+          <Button bgColor="bg-primary">Open an account</Button>
         </SectionInfo>
       </Section>
 
