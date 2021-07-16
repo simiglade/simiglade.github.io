@@ -4,13 +4,13 @@ import Layout from "../../components/Layout";
 import SectionInfoTitle from "components/section/SectionInfoTitle";
 import SectionInfoDescription from "components/section/SectionInfoDescription";
 import BusinessOwner from "./BusinessOwner.png";
-import FreelancersDashboard from "./FreelancersDashboard.png";
 import Section from "components/section/Section";
 import SectionInfo from "components/section/SectionInfo";
 import Button from "components/button/Button";
 import FreelancersMobile from "./FreelancersMobile.png";
 import SectionMoreThanBank from "components/section/SectionMoreThanBank";
 import SectionDebitVirtualCard from "../../components/section/SectionDebitVirtualCard";
+import SectionInvoicing from "../../components/section/SectionInvoicing";
 
 export default function Freelancers() {
   const headerdetails = {
@@ -32,37 +32,9 @@ export default function Freelancers() {
         img={headerdetails.img}
       />
       <SectionMoreThanBank />
-      <section style={{ backgroundColor: "#E9F9FF" }}>
-        <Section className="flex items-center justify-between flex-wrap">
-          <SectionInfo>
-            <img
-              src={FreelancersDashboard}
-              className="max-h-96"
-              alt="Glade dashboard mobile"
-            />
-          </SectionInfo>
-          <SectionInfo>
-            <div className="mb-5">
-              <SectionInfoTitle header>FreelancersDashboard</SectionInfoTitle>
 
-              <div className="mb-5">
-                <SectionInfoTitle>Invoicing</SectionInfoTitle>
-                <SectionInfoDescription style={{ color: "#7782BF" }}>
-                  Generate invoices conveniently and customize before you send
-                  them. Add your company logo and custom fields, custom-tailor
-                  your invoices per recipient if needed.
-                </SectionInfoDescription>
-                <SectionInfoDescription style={{ color: "#7782BF" }}>
-                  Send invoices to your local and international clients and get
-                  paid into your Glade account.
-                </SectionInfoDescription>
-              </div>
-              <Button bgColor="bg-primary">Open an Account</Button>
-            </div>
-          </SectionInfo>
-        </Section>
-      </section>
-
+      {/* Section invoicing */}
+      <SectionInvoicing />
       <Section className="flex items-center justify-between flex-wrap">
         <SectionInfo>
           <img

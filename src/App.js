@@ -9,6 +9,7 @@ import GladePay from "./pages/gladePay/GladePay";
 import GladeSMELoans from "./pages/gladeSMELoans/GladeSMELoans";
 import GladeStore from "./pages/gladeStore/GladeStore";
 import Freelancers from "./pages/freelancers/Freelancers";
+import GrowingBusinesses from "./pages/growingBusinesses/GrowingBusinesses";
 
 function App() {
   return (
@@ -54,6 +55,11 @@ const ROUTES = [
   {
     path: "/freelancers",
     component: Freelancers,
+  },
+
+  {
+    path: "/small-business",
+    component: GrowingBusinesses,
   },
   { path: "/", component: Home },
 ];

@@ -3,6 +3,10 @@
   margin-bottom: 5rem !important;
 }
 
+.text-light {
+  color: hsl(231, 36%, 61%) !important;
+}
+
 
 
 /* Inter font face */
