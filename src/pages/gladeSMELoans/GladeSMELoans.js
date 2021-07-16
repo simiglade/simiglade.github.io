@@ -143,8 +143,6 @@ export default function GladeSMELoans() {
           <Button bgColor="bg-primary">Open an account</Button>
         </SectionInfo>
       </Section>
-
-      <SectionEmbededAPI />
     </Layout>
   );
 }

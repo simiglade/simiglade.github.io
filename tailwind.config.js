@@ -83,7 +83,7 @@ module.exports = {
           },
           ".text-body1": {
             fontFamily,
-            fontWeight: 300,
+            fontWeight: 400,
             fontSize: "1rem",
             lineHeight: "26px",
             color: "#717485"

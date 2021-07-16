@@ -21,7 +21,7 @@ function HeaderLinkContent(props) {
               <NavLink
                 to={link.path}
                 className="block "
-                style={{ color: "#7782BF", fontWeight: "300" }}
+                style={{ color: "#7782BF", fontWeight: "400" }}
               >
                 {link.label}
               </NavLink>
@@ -31,7 +31,7 @@ function HeaderLinkContent(props) {
           <NavLink
             to={menu.path}
             className=" block"
-            style={{ color: "#7782BF", fontWeight: "300" }}
+            style={{ color: "#7782BF", fontWeight: "400" }}
           >
             {menu.label}
           </NavLink>
