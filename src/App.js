@@ -10,6 +10,7 @@ import GladeSMELoans from "./pages/gladeSMELoans/GladeSMELoans";
 import GladeStore from "./pages/gladeStore/GladeStore";
 import Freelancers from "./pages/freelancers/Freelancers";
 import GrowingBusinesses from "./pages/growingBusinesses/GrowingBusinesses";
+import StartUps from "./pages/startups/Startups";
 
 function App() {
   return (
@@ -60,6 +61,11 @@ const ROUTES = [
   {
     path: "/small-business",
     component: GrowingBusinesses,
+  },
+
+  {
+    path: "/startups",
+    component: StartUps,
   },
   { path: "/", component: Home },
 ];

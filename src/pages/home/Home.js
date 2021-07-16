@@ -13,13 +13,13 @@ import { ArrowDown } from "../../utils/icons";
 
 import HomeExecutive from "./HomeRegisterComapny.png";
 import HomePos from "./HomePOS.png";
-import HomeDashboard from "./HomeDashboard.png";
 import DashboardMobile from "./DashboardMobile.png";
 
 import Layout from "../../components/Layout";
 import SectionDebitVirtualCard from "../../components/section/SectionDebitVirtualCard";
 import SectionBusinessAccount from "../../components/section/SectionBusinessAccount";
 import SectionMoreThanBank from "../../components/section/SectionMoreThanBank";
+import SectionControlYourFinance from "../../components/section/SectionControlYourFinance";
 
 function Home(props) {
   const [isVideoLoaded, setIsVideoLoaded] = React.useState(false);
@@ -133,57 +133,8 @@ function Home(props) {
             "linear-gradient(105.37deg, #00AFEF 17.71%, #0E038A 100%)",
         }}
       >
-        <Section className="flex items-center justify-between flex-wrap">
-          <SectionInfo>
-            <img src={HomeDashboard} alt="Glade Dashboard" />
-          </SectionInfo>
-          <SectionInfo>
-            <SectionInfoTitle header style={{ color: "white" }}>
-              Control your business finance conveniently.
-            </SectionInfoTitle>
-            <SectionInfoDescription style={{ color: "white" }}>
-              Everything your business needs built into your phone and laptop.
-            </SectionInfoDescription>
-            <SectionInfoTitle style={{ color: "white" }}>
-              <span class="material-icons md-18 mr-3 mt-3 text-white fill-current">
-                check_circle
-              </span>
-              Invoicing
-            </SectionInfoTitle>
-            <SectionInfoDescription style={{ color: "white" }}>
-              Create and send invoices to customer and request for payments.
-            </SectionInfoDescription>
-            <SectionInfoTitle style={{ color: "white" }}>
-              <span class="material-icons md-18 mr-3 mt-3 text-white fill-current">
-                check_circle
-              </span>
-              Staff Payroll
-            </SectionInfoTitle>
-            <SectionInfoDescription style={{ color: "white" }}>
-              Manage employees schedules and payroll.
-            </SectionInfoDescription>
-            <SectionInfoTitle style={{ color: "white" }}>
-              <span class="material-icons md-18 mr-3 mt-3 text-white fill-current">
-                check_circle
-              </span>{" "}
-              Payments
-            </SectionInfoTitle>
-            <SectionInfoDescription style={{ color: "white" }}>
-              Accept online and in-store payments. Track and monitor your
-              inflows.
-            </SectionInfoDescription>
-            <SectionInfoTitle style={{ color: "white" }}>
-              <span class="material-icons md-18 mr-3 mt-3 text-white fill-current">
-                check_circle
-              </span>
-              Customer Insights
-            </SectionInfoTitle>
-            <SectionInfoDescription style={{ color: "white" }}>
-              Understand your customer behaviour and generate valuable insights
-              to help in making informed decisions.
-            </SectionInfoDescription>
-          </SectionInfo>
-        </Section>
+        {/* Control your finance */}
+        <SectionControlYourFinance white />
       </div>
       <div
         style={{
