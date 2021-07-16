@@ -17,10 +17,13 @@ export default function SectionEmbededAPI() {
               <SectionInfoTitle header style={{ margin: "0 auto" }}>
                 Build amazing products with our API
               </SectionInfoTitle>
-              <SectionInfoDescription className="max-w-sm">
+              <div className="flex justify-center">
+                  <SectionInfoDescription className="max-w-sm">
                 Made for developers and innovators like you to build amazing
                 products.
               </SectionInfoDescription>
+              </div>
+              
               <Button bgColor="bg-secondary">Open API docs</Button>
             </div>
           </div>
