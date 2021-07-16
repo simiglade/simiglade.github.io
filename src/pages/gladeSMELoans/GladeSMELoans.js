@@ -9,6 +9,7 @@ import BusinessSMELoans from "./BusinessSMELoans.png";
 import Section from "components/section/Section";
 import SectionInfo from "components/section/SectionInfo";
 import Button from "components/button/Button";
+import BusinessBusinessOwner from "./BusinessBusinessOwner.png";
 
 export default function GladeSMELoans() {
   const headerdetails = {
@@ -85,6 +86,27 @@ export default function GladeSMELoans() {
                 </div>
               ))}
             </div>
+          </SectionInfo>
+        </Section>
+      </section>
+
+      <section style={{ backgroundColor: "#E9F9FF" }}>
+        <Section className="flex items-center justify-between flex-wrap">
+          <SectionInfo>
+            <div className="mb-5">
+              <SectionInfoTitle header>₦100M+</SectionInfoTitle>
+              <SectionInfoTitle>
+                worth of SME loans have already been given out
+              </SectionInfoTitle>
+            </div>
+            <Button bgColor="bg-secondary">Apply for a loan</Button>
+          </SectionInfo>
+          <SectionInfo>
+            <img
+              src={BusinessBusinessOwner}
+              className="max-h-96"
+              alt="Glade dashboard mobile"
+            />
           </SectionInfo>
         </Section>
       </section>
