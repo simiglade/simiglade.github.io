@@ -16,6 +16,40 @@ export function ArrowDown() {
   );
 }
 
+export function ArrowDownAccord() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="10"
+      fill="none"
+      viewBox="0 0 16 10"
+    >
+      <path
+        fill="#032086"
+        d="M1.88.06L8 6.167 14.12.06 16 1.94l-8 8-8-8L1.88.06z"
+      ></path>
+    </svg>
+  );
+}
+
+export function ArrowUpAccord() {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="16"
+      height="10"
+      fill="none"
+      viewBox="0 0 16 10"
+    >
+      <path
+        fill="#032086"
+        d="M14.12 9.94L8 3.833 1.88 9.94 0 8.06l8-8 8 8-1.88 1.88z"
+      ></path>
+    </svg>
+  );
+}
+
 export function BackdropIcon() {
   return (
     <svg

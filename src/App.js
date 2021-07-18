@@ -16,6 +16,7 @@ import Brand from "./pages/brand/Brand";
 import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
 import TermsAndCondition from "./pages/termsAndCondition/TermsAndCondition";
 import AboutUs from "./pages/aboutUs/AboutUs";
+import Faq from "./pages/faq/Faq";
 
 function App() {
   return (
@@ -92,6 +93,10 @@ const ROUTES = [
   {
     path: "/about-us",
     component: AboutUs,
+  },
+  {
+    path: "/faq",
+    component: Faq,
   },
   { path: "/", component: Home },
 ];
