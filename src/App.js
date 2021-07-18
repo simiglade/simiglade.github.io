@@ -15,6 +15,7 @@ import ContactUs from "./pages/contactUs/ContactUs";
 import Brand from "./pages/brand/Brand";
 import PrivacyPolicy from "./pages/privacyPolicy/PrivacyPolicy";
 import TermsAndCondition from "./pages/termsAndCondition/TermsAndCondition";
+import AboutUs from "./pages/aboutUs/AboutUs";
 
 function App() {
   return (
@@ -87,6 +88,10 @@ const ROUTES = [
   {
     path: "/terms-and-conditions",
     component: TermsAndCondition,
+  },
+  {
+    path: "/about-us",
+    component: AboutUs,
   },
   { path: "/", component: Home },
 ];

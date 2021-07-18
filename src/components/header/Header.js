@@ -80,7 +80,9 @@ function Header(props) {
       {location.pathname === "/" ? (
         <div
           className={clsx(
-            "fixed bg-white text-black z-appBar w-full hidden lg:block",
+            `fixed ${
+              location.pathname === "/about-us" ? "bg-transparent" : "bg-white"
+            } text-black z-appBar w-full hidden lg:block `,
             isFixedHeader ? "top-0" : "-top-20"
           )}
         >
@@ -89,7 +91,9 @@ function Header(props) {
       ) : (
         <div
           className={clsx(
-            "fixed bg-white text-black z-appBar w-full hidden lg:block top-0"
+            `${
+              location.pathname === "/about-us" ? "bg-transparent" : "bg-white"
+            } fixed bg-white text-black z-appBar w-full hidden lg:block top-0`
           )}
         >
           {desktopContent()}
