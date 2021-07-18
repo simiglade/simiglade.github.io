@@ -95,7 +95,9 @@ export default function GladeStore() {
               worth of SME loans have already been given out
             </SectionInfoDescription>
           </div>
-          <Button bgColor="bg-secondary">Open an account</Button>
+          <a href="https://dashboard.glade.ng/register">
+            <Button bgColor="bg-secondary">Open an account</Button>
+          </a>
         </SectionInfo>
         <SectionInfo>
           <img

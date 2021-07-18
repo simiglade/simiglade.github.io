@@ -13,17 +13,25 @@ function Header(props) {
   const [isMobileMenu, setIsMobileMenu] = React.useState(false);
   const [isFixedHeader, setIsFixedHeader] = React.useState(false);
 
-  const openAccountButton = <Button>Open an account</Button>;
+  const openAccountButton = (
+    <a href="https://dashboard.glade.ng/register">
+      <Button>Open an account</Button>
+    </a>
+  );
   const loginToWebButtonWhite = (
-    <Button variant="outlined" className="ring-white text-white">
-      Login to web
-    </Button>
+    <a href="https://dashboard.glade.ng/login">
+      <Button variant="outlined" className="ring-white text-white">
+        Login to web
+      </Button>
+    </a>
   );
 
   const loginToWebButtonPrimary = (
-    <Button variant="outlined" className="ring-primary text-primary">
-      Login to web
-    </Button>
+    <a href="https://dashboard.glade.ng/login">
+      <Button variant="outlined" className="ring-primary text-primary">
+        Login to web
+      </Button>
+    </a>
   );
 
   const logoDark = <Logo />;

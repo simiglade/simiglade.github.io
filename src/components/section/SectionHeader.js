@@ -28,7 +28,11 @@ export default function SectionHeader({
             {title}
           </SectionInfoTitle>
           <SectionInfoDescription>{description}</SectionInfoDescription>
-          <a href={buttonLink || "/"} target="_blank" rel="noreferrer">
+          <a
+            href={buttonLink || "https://dashboard.glade.ng/register"}
+            target="_blank"
+            rel="noreferrer"
+          >
             <Button bgColor="bg-secondary px-2" style={{ minWidth: "140px" }}>
               {buttonLabel}
             </Button>

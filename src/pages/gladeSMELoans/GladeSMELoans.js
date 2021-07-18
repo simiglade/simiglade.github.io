@@ -159,7 +159,9 @@ export default function GladeSMELoans() {
               </SectionInfoDescription>
             </div>
           </div>
-          <Button bgColor="bg-primary">Open an account</Button>
+          <a href="https://dashboard.glade.ng/register">
+            <Button bgColor="bg-primary">Open an account</Button>
+          </a>
         </SectionInfo>
       </Section>
     </Layout>

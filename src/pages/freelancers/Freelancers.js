@@ -54,7 +54,9 @@ export default function Freelancers() {
                 international payments directly to your Glade account.
               </SectionInfoDescription>
             </div>
-            <Button bgColor="bg-primary">Open an Account</Button>
+            <a href="https://dashboard.glade.ng/register">
+              <Button bgColor="bg-primary">Open an Account</Button>
+            </a>
           </div>
         </SectionInfo>
       </Section>

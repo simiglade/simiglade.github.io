@@ -31,11 +31,11 @@ export default function AboutUs() {
                 color: "#010040, 100%",
                 lineHeight: "64px",
               }}
-              className="text-center max-w-3xl mb-5"
+              className="text-center max-w-3xl"
             >
               Powering growth for innovative African enterprises{" "}
             </SectionInfoTitle>
-            <SectionInfoDescription className="max-w-xl text-center">
+            <SectionInfoDescription className="max-w-xl ttext-center mb-10">
               We are fundamentally changing how small businesses access banking
               and financial services.
             </SectionInfoDescription>
@@ -163,7 +163,7 @@ export default function AboutUs() {
         <SectionInfoTitle header className="mt-10 text-center">
           We’re backed by leading global investors and partners
         </SectionInfoTitle>
-        <SectionInfoDescription className="mt-5">
+        <SectionInfoDescription className="mt-5 text-center">
           Glade is backed by one of the best tech accelerator, notable global
           investors and partners in the world.
         </SectionInfoDescription>

@@ -57,7 +57,9 @@ export default function GrowingBusinesses() {
                 finances easy. No finance degree required.
               </SectionInfoDescription>
             </div>
-            <Button bgColor="bg-primary">Open an Account</Button>
+            <a href="https://dashboard.glade.ng/register">
+              <Button bgColor="bg-primary">Open an Account</Button>
+            </a>
           </div>
         </SectionInfo>
       </Section>

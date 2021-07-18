@@ -31,7 +31,9 @@ export default function SectionInvoicing() {
                 paid into your Glade account.
               </SectionInfoDescription>
             </div>
-            <Button bgColor="bg-primary">Open an Account</Button>
+            <a href="https://dashboard.glade.ng/register">
+              <Button bgColor="bg-primary">Open an Account</Button>
+            </a>
           </div>
         </SectionInfo>
       </Section>

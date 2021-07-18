@@ -90,7 +90,9 @@ function Home(props) {
                 Proudly made for small businesses, startups and freelancers in
                 Africa.
               </p>
-              <Button>Open an account</Button>
+              <a href="https://dashboard.glade.ng/register">
+                <Button>Open an account</Button>
+              </a>
             </div>
           </div>
           <div className="scroll-down">
