@@ -22,7 +22,7 @@ export default function Faq() {
           For further questions, please feel free to contact us here.
         </SectionInfoDescription>
 
-        <div>
+        <div className="mt-20">
           {faqs.map((faq, key) => (
             <div key={key} className="w-full md:w-3/5 mx-auto p-4 mb-20">
               <div>

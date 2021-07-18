@@ -13,10 +13,6 @@
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <link
-    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-    rel="stylesheet">
-  <script src='https://embed.runkit.com'></script>
   <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -26,7 +22,89 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <title>React App</title>
+  <!-- SEO Meta Tags -->
+  <meta name="robots" content="FOLLOW, INDEX">
+  <meta name="keywords"
+    content="glade, fintech, payments, banking, current accounts, account numbers, loans, overdrafts, fund transfer, cards, african businesses, payments, africa, nigeria, payment gateway, fintech, tech in africa, ussd, qr pay, mobile money, pos, invoicing, quickcommerce, funds transfer, dashboard, fraud protection, verification">
+  <meta name="description" content="Beyond Payments, more than your everyday Bank. Get a business account in minutes.">
+  <link rel="canonical" href="https://www.glade.ng ">
+
+  <!-- Open Graph -->
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:see_also" content="http://web.facebook.com/gladepay/">
+  <meta property="og:see_also" content="https://twitter.com/gladepay">
+  <meta property="og:see_also" content="http://www.instagram.com/gladepay/">
+  <meta property="og:see_also" content="https://www.youtube.com/channel/UC32zZf1f-uBV_ZlQ1NvwovQ">
+
+  <!-- Facebook Meta Tags -->
+  <meta property="og:image:width" content="1239">
+  <meta property="og:image:height" content="649">
+  <meta property="og:title" content="Glade | A Digital Bank for Small Businesses in Africa. ">
+  <meta property="og:description" content="A Digital Bank for small Businesses in Africa.">
+  <meta property="og:image" content="%PUBLIC_URL%/favicon.ico">
+  <meta property="og:image:alt" content="Glade Logo with white bakcground">
+  <meta property="og:url" content="https://www.glade.ng ">
+  <meta property="og:site_name" content="Glade">
+
+  <!--Twitter Tags-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="Glade">
+  <meta name="twitter:title" content="Glade | A Digital Bank for Small Businesses in Africa. ">
+  <meta name="twitter:description" content="A Digital Bank for small Businesses in Africa.">
+  <meta name="twitter:image" content="https://www.gladepay.ng/og-image.jpg">
+  <meta name="twitter:image:alt" content="Glade Logo with white bakcground">
+
+  <!-- Social Media Analytics -->
+  <meta property="fb:app_id" content="your_app_id">
+  <meta name="twitter:site" content="@glade">
+  <meta name="twitter:creator" content="@glade">
+
+
+  <link rel="shortcut icon" href="https://glade.ng/favicon-32x32.png" type="image/x-icon">
+  <title>Glade | A Digital Bank for Small Businesses in Africa. </title>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+  <script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-164601089-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'UA-164601089-2');
+  </script>
+
+  <!-- Facebook Pixel Code -->
+  <script>
+    ! function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '672592286893558');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=672592286893558&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
 </head>
 
 <body>
