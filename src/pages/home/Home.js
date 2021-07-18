@@ -42,7 +42,7 @@ function Home(props) {
     {
       title: "Head of Growth, Payforce",
       description:
-        "I want to thank the Glade team for their support during our project. Our service is now more efficient today &amp; sales have increased by 70%. Thank you once more guys & don't stop doing what you do.",
+        "I want to thank the Glade team for their support during our project. Our service is now more efficient today and sales have increased by 70%. Thank you once more guys & don't stop doing what you do.",
     },
     {
       title: "Canbillaire Nigeria Ltd.",
