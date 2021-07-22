@@ -5,7 +5,7 @@ function HeaderLinkContent(props) {
   const { submenus } = props;
 
   return (
-    <div className="flex flex-wrap justify-between shadow-md rounded-sm">
+    <div className="flex flex-wrap justify-between shadow-lg rounded-sm">
       {submenus.map((menu) =>
         menu.submenus ? (
           <div className="p-6 space-y-2">
