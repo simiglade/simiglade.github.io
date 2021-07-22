@@ -11,6 +11,12 @@
   @apply block w-full bg-gray-100 text-gray-500 border rounded py-3 px-4 mb-3 leading-tight focus: outline-none focus:bg-white;
 }
 
+html,
+body {
+  font-family: "Inter", sans-serif !important;
+  scroll-behavior: smooth !important;
+}
+
 /* Inter font face */
 @font-face {
   font-family: 'Inter';
@@ -154,11 +160,7 @@
   font-style: normal;
   font-weight: 900;
 } */
-html,
-body {
-  font-family: "Inter", sans-serif !important;
-  scroll-behavior: smooth !important;
-}
+
 
 .tab-content {
   max-height: 0;

@@ -6,6 +6,9 @@
   body {
     @apply text-body2;
     overflow: auto;
+    font-family: "Inter",
+      sans-serif !important;
+
   }
 }
 
