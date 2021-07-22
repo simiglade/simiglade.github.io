@@ -32,7 +32,7 @@ function Footer(props) {
   ];
   return (
     <div className="Footer flex justify-center bg-opacity-10 p-20">
-      <div className="max-w-6xl px-5 grid md:grid-col-1 grid-cols-3 gap-8">
+      <div className="max-w-6xl px-5 grid grid-col-1 md:grid-cols-3 gap-8">
         <div>
           <div>
             <p className="Footer__item__text">
