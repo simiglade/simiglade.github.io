@@ -1,3 +1,10 @@
+html,
+body {
+  font-family: "Inter", sans-serif !important;
+  scroll-behavior: smooth !important;
+}
+
+
 .container-h {
   margin-top: 5rem !important;
   margin-bottom: 5rem !important;
@@ -9,12 +16,6 @@
 
 .input-text {
   @apply block w-full bg-gray-100 text-gray-500 border rounded py-3 px-4 mb-3 leading-tight focus: outline-none focus:bg-white;
-}
-
-html,
-body {
-  font-family: "Inter", sans-serif !important;
-  scroll-behavior: smooth !important;
 }
 
 .tab-content {
